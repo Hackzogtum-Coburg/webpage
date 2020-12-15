@@ -9,4 +9,4 @@ Ab 15:00 werdet ihr in unserem Space empfangen und könnt vorbeischauen. Die Erf
 
 Um 19:00 findet noch ein kurzer Talk zum Thema "Gaming auf Linux" statt.
 
-[![avatar-1295397_640](images/avatar-1295397_640-300x300.png)](https://hackzogtum-coburg.de/wp-content/uploads/2018/11/avatar-1295397_640.png)
+[![avatar-1295397_640](../images/avatar-1295397_640-300x300.png)](https://hackzogtum-coburg.de/wp-content/uploads/2018/11/avatar-1295397_640.png)

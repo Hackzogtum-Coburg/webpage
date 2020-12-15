@@ -3,7 +3,7 @@ title: "Haskell Workshop - Terminumfrage Teil 2"
 date: "2020-02-11"
 ---
 
-![](images/Auswahl_020.png)
+![](../images/Auswahl_020.png)
 
 **Die Terminumfrage für den zweiten Teil findet sich unter:**  
 [\--> Terminumfrage <--](https://oc.electrologic.org/apps/polls/s/6nTOiHZBCjZAQmBp)

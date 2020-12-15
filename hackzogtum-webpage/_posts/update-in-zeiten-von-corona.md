@@ -9,6 +9,6 @@ Fleißig druckt und bastelt er Schutzmasken gegen Tröpfcheninfektionen für ver
 Wer selbst mit produzieren möchte, kann sicher an einem Abend auf dem Mumble den ein oder anderen Tipp zur Produktion bekommen.  
 Bleibt zuhause und vorallem bleibt gesund:)
 
-- ![](images/signal-attachment-2020-04-03-144818-1-880x1024.jpeg)
+- ![](../images/signal-attachment-2020-04-03-144818-1-880x1024.jpeg)
     
-- ![](images/signal-attachment-2020-04-03-144559_002-1024x768.jpeg)
+- ![](../images/signal-attachment-2020-04-03-144559_002-1024x768.jpeg)

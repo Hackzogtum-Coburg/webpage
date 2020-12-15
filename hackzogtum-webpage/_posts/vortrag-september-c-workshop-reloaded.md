@@ -15,7 +15,7 @@ Wir werden nach einer kurzen Wiederholung, noch einmal auf Automaten eingehen un
 
 Was im Juli mit vollem Haus und steiler Lernkurve begann, soll im September, mit etwas flacherem Einstieg fortgeführt werden. Wenn du also Interesse am Programmieren allgemein, der Programmiersprache C, dem Entwickeln von Funktionalität auf Arduinos hast, komm vorbei!
 
-![](images/helloworld.png)
+![](../images/helloworld.png)
 
 Wir werden anhand kleiner Codebeispiele Grundlagen der Programmierung und der Sprache **C** erläutern und dann darf sich jeder selbst - mit Unterstützung - daran versuchen. Wir beginnen mit einfachen Beispielen und entwickeln im Zuge des Workshops eine Ampelschaltung, die später auf einen Arduino übertragen werden soll um dort LEDs anzusteuern.
 
