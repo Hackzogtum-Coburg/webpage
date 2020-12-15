@@ -14,4 +14,4 @@ Bei uns im Hackzogtum startet am 16. April um 19:30 Uhr eine Workshopreihe zum U
 
 Folgetermine werden dann mit den Teilnehmern vor Ort besprochen. Der zweite Termin ist am 23.04.2019 19:30 Uhr. Der dritte Termin ist am 30.04.2019 19:30 Uhr. Der vierte Termin ist am 07.05.2019 19:30 Uhr. Der fünfte Termin ist am 21.05.2019 19:30 Uhr.
 
-![](https://hackzogtum-coburg.de/wp-content/uploads/2019/04/test..jpg)
+![](images/test..jpg)

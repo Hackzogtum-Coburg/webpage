@@ -7,4 +7,4 @@ Der 35C3 hat sein offizielles Ende erreicht und wir gehen mit viel Motivation un
 
 **BE EXCELLENT TO EACH OTHER**
 
-[![index](https://hackzogtum-coburg.de/wp-content/uploads/2018/12/index-300x169.jpeg)](https://hackzogtum-coburg.de/wp-content/uploads/2018/12/index.jpeg)
+[![index](images/index-300x169.jpeg)](https://hackzogtum-coburg.de/wp-content/uploads/2018/12/index.jpeg)

@@ -13,6 +13,6 @@ Wer etwas beitragen möchte, oder über die Schulter schauen möchte ist herzlic
 
  
 
-[![sm_20180918_215412](https://hackzogtum-coburg.de/wp-content/uploads/2018/10/sm_20180918_215412-300x225.jpg)](https://hackzogtum-coburg.de/wp-content/uploads/2018/10/sm_20180918_215412.jpg) [![sm_20180918_215447](https://hackzogtum-coburg.de/wp-content/uploads/2018/10/sm_20180918_215447-300x225.jpg)](https://hackzogtum-coburg.de/wp-content/uploads/2018/10/sm_20180918_215447.jpg) [![sm_20180918_215511](https://hackzogtum-coburg.de/wp-content/uploads/2018/10/sm_20180918_215511-300x225.jpg)](https://hackzogtum-coburg.de/wp-content/uploads/2018/10/sm_20180918_215511.jpg) [![sm_20180918_224839](https://hackzogtum-coburg.de/wp-content/uploads/2018/10/sm_20180918_224839-300x225.jpg)](https://hackzogtum-coburg.de/wp-content/uploads/2018/10/sm_20180918_224839.jpg)
+[![sm_20180918_215412](images/sm_20180918_215412-300x225.jpg)](https://hackzogtum-coburg.de/wp-content/uploads/2018/10/sm_20180918_215412.jpg) [![sm_20180918_215447](images/sm_20180918_215447-300x225.jpg)](https://hackzogtum-coburg.de/wp-content/uploads/2018/10/sm_20180918_215447.jpg) [![sm_20180918_215511](images/sm_20180918_215511-300x225.jpg)](https://hackzogtum-coburg.de/wp-content/uploads/2018/10/sm_20180918_215511.jpg) [![sm_20180918_224839](images/sm_20180918_224839-300x225.jpg)](https://hackzogtum-coburg.de/wp-content/uploads/2018/10/sm_20180918_224839.jpg)
 
 \[video width="1280" height="720" mp4="https://hackzogtum-coburg.de/wp-content/uploads/2018/11/Cocktailbot\_Untertitel.mp4"\]\[/video\]

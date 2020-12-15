@@ -3,7 +3,7 @@ title: "Space closed_but_open"
 date: "2020-03-17"
 ---
 
-![](https://in.hackzogtum-coburg.de/in_widget/closed.png)
+![](images/closed.png)
 
 Es ist niemand hier...
 

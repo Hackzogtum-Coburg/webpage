@@ -12,9 +12,9 @@ Es ist die ungekürzte Fassung im O-Ton, mit Mauszeiger-Positionierungs-Panne un
 
 **Termin: 26.10.2020 - 20:30 Uhr**  
 
-- ![](https://hackzogtum-coburg.de/wp-content/uploads/2020/10/testClip_02.png)
+- ![](images/testClip_02.png)
     
-- ![](https://hackzogtum-coburg.de/wp-content/uploads/2020/10/testClip_01-1024x542.png)
+- ![](images/testClip_01-1024x542.png)
     
 
 In diesem Workshop zeige ich (3d-flo) live mit Bild über BigBlueButton (Link wird in Mumble zu Beginn bekanntgegeben) und mit Ton über [Mumble](https://www.mumble.info) (10 Minuten für Headset-einrichten und Text-To-Speech-Deaktivieren einplanen; dann neuen Server hinzufügen und bei Adresse mumble.hackzogtum-coburg.de eingeben), wie ich mit Blender einen Flaschen-Clip ("Mate-Tag") mit Schriftzug konstruiere. Dieser kann dann - auch mit Blender - als STL-Datei exportiert werden und dann mit einem 3d-Drucker gedruckt werden. Da Blender gerne mal mit einem Update die Benutzeroberfläche ändert, gehe ich vorher nochmal Schritt für Schritt durch, wie ich ein frisch-installiertes Blender so einrichte, dass ich damit gut konstruieren kann. Wer will, kann als Vorbereitung die Folien zum Vortrag "[Blender-Konstruktion, Die Erstellung technischer Objekte mit Blender für den 3d-Druck](https://cumulus.hackzogtum-coburg.de/s/wS7b36RgrcrKbHp)" durchgehen. Wer hart im Nehmen ist, kann sich auch das zugehörige [Youtube-Video](https://www.youtube.com/watch?v=LLJcvglrIEk) anschauen.
