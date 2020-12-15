@@ -5,7 +5,21 @@
 /* Start purging... */
 @tailwind components;
 /* Stop purging. */
+body {
+    background-color: #1a1a1a;
+    color: #e5e5e5;
+}
+.font-bold {
+    color: green;
+}
 
+.underline {
+    color: green;
+}
+
+a:hover {
+    color: rgb(0, 255, 0) !important;
+}
 /* Write you own custom component styles here */
 
 /* Start purging... */
