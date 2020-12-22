@@ -1,12 +1,10 @@
 import Container from '../components/container'
-import MoreStories from '../components/more-stories'
 import Intro from '../components/intro'
 import Layout from '../components/layout'
 import { getAllPosts } from '../lib/api'
 import Head from 'next/head'
 
-export default function Index({ allPosts }) {
-  const morePosts = allPosts
+export default function info() {
   return (
     <>
       <Layout>
@@ -15,7 +13,6 @@ export default function Index({ allPosts }) {
         </Head>
         <Container>
           <Intro />
-          {morePosts.length > 0 && <MoreStories posts={morePosts} />}
         </Container>
       </Layout>
     </>

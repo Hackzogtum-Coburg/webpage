@@ -9,35 +9,35 @@ export default function Intro() {
       <h4 className="text-center md:text-left text-lg mt-5 md:pl-8">
         {' '}
         <a
-          href="./"
+          href="/"
           className="underline hover:text-success duration-200 transition-colors"
         >
         Home
         </a>
         {' '}
         <a
-          href="./"
+          href="/media"
           className="underline hover:text-success duration-200 transition-colors"
         >
         Media
         </a>
         {' '}
         <a
-          href="./"
+          href="/info"
           className="underline hover:text-success duration-200 transition-colors"
         >
         Info
         </a>
         {' '}
         <a
-          href="./"
+          href="/kontakt"
           className="underline hover:text-success duration-200 transition-colors"
         >
         Kontakt
         </a>
         {' '}
         <a
-          href="./"
+          href="/impressum"
           className="underline hover:text-success duration-200 transition-colors"
         >
         Impressum
