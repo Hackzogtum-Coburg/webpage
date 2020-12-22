@@ -1,6 +1,7 @@
 ---
 title: "CITIZENFOUR aftermath - Warum sollten wir uns an der GDL ein Beispiel nehmen?"
 date: "2015-05-20"
+coverImage: '../images/snowden-204x300.png'
 ---
 
 Die Filmvorführung [CITIZENFOUR](https://de.wikipedia.org/wiki/Citizenfour_%28Film%29) hat unseren Space heute mit insgesamt 25 Interessierten wieder komplett gefüllt.

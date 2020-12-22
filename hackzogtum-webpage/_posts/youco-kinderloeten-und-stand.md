@@ -1,6 +1,7 @@
 ---
 title: "YouCo - Kinderlöten und Stand"
 date: "2019-07-01"
+coverImage: '../images/youco19_censor.jpg'
 ---
 
 Wir möchten uns bei den Organisatoren, Helfern und Möglichmachern des [YouCo](http://www.you-co.de/) für das grandiose Festival bedanken und auch dafür, dass wir wieder dabei sein durften.

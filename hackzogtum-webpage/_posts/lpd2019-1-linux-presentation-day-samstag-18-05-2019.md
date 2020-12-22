@@ -1,6 +1,7 @@
 ---
 title: "LPD2019.1 - Linux Presentation Day - Samstag 18.05.2019"
 date: "2019-05-16"
+coverImage: '../images/placeholder.jpg'
 ---
 
 Am Samstag, den 18.5.2019, ab 15:00 Uhr, ist zum wiederholten Male LINUX - PRESENTATION - DAY (LPD) bei uns im hackzogtum.

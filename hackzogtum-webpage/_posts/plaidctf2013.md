@@ -1,6 +1,7 @@
 ---
 title: "PlaidCTF2013"
 date: "2013-04-25"
+coverImage: '../images/placeholder.jpg'
 ---
 
 Am letzten Wochenende 19. - 21.04.2013Â  fand die [PlaidCTF2013](http://plaidctf.com/%29) - eine der größten und bekanntesten Hackingchallenges - statt. Das Team des [backspace Bamberg](http://www.hackerspace-bamberg.de/Hauptseite%29) hat dabei Platz 37 von ca. 900 belegt, wofür ich hier erst einmal einen großen Glückwunsch loswerden möchte: well played oder fränkisch: "ned schlechd".

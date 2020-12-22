@@ -1,6 +1,7 @@
 ---
 title: "Vortrag im Juli"
 date: "2019-07-02"
+coverImage: '../images/source-4280758_640-300x200.jpg'
 ---
 
 Du wolltest schon immer einen Einstieg in die Programmierung? Vielleicht sogar an einem Beispiel? Dann ist unser kommender Vortrag perfekt! Wir bauen eine AmpelschaltungÂ in C!![](../images/source-4280758_640-300x200.jpg) Wo? Bei uns in der **Geleitstraße 10** in Coburg. Wann? **16.Juli 20:00 Uhr**
