@@ -1,7 +1,7 @@
 ---
 title: "Workshop BlenderCAM"
 date: "2020-11-17"
-coverImage: '../images/blendercampic.jpg'
+coverImage: '/images/blendercampic.jpg'
 ---
 
 Termin: 24. 11. 2020 - 21:00 Uhr  
