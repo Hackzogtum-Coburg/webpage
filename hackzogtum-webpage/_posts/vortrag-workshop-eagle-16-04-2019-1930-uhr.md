@@ -1,7 +1,7 @@
 ---
 title: "Vortrag / Workshop  â€žEAGLEâ€œ - Update Termin 5 ist am 21.05.2019 19:30 Uhr"
 date: "2019-05-21"
-coverImage: '../images/test..jpg'
+coverImage: '/images/test..jpg'
 ---
 
 [EAGLE](https://www.autodesk.de/products/eagle/overview) ist eine einfach anzuwendende Entwurfssoftware zur Erstellung von Layouts für Platinen.

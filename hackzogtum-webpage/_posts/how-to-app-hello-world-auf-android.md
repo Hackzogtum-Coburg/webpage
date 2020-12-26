@@ -1,7 +1,7 @@
 ---
 title: "How to app - Hello World auf Android"
 date: "2018-08-23"
-coverImage: '../images/cap-169x300.png'
+coverImage: '/images/cap-169x300.png'
 ---
 
 ## **Achtung Termin auf Dienstag, den 11. September verschoben**

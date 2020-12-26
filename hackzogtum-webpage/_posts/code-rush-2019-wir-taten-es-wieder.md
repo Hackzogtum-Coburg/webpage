@@ -1,7 +1,7 @@
 ---
 title: "CO:DE RUSH 2019 - Wir taten es wieder"
 date: "2019-11-23"
-coverImage: '../images/game-air-1024x602.png'
+coverImage: '/images/game-air-1024x602.png'
 ---
 
 ![](../images/coderush.png)

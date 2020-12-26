@@ -1,7 +1,7 @@
 ---
 title: "Auf Expedition im #Neuland - Serie auf RadioEINS"
 date: "2013-07-22"
-coverImage: '../images/placeholder.jpg'
+coverImage: '/images/placeholder.jpg'
 ---
 
 Das Internet ist für viele Menschen #Neuland - oder zumindest wie ein Urlaubsland. Man kennt ein paar Ecken, war mal da. Aber wie Land und Leute ticken, dass weiß man kaum. Das Hackzogtum Coburg will Ihnen zusammen mit RadioEINS einen kleinen Reiseführer für das #Neuland anbieten. Auch als Vorbereitung auf den Informationsabend "Digitale Selbstverteidigung" am kommenden Donnerstag, den **25\. Juli** um **19:30 Uhr** im **Raum 5-1** der **Hochschule Coburg**. Tag 5: Auf Expedition im #Neuland - Der Erstkontakt 

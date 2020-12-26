@@ -1,7 +1,7 @@
 ---
 title: "GMTK GameJam 2020"
 date: "2020-07-07"
-coverImage: '../images/screenshot_smasher.png'
+coverImage: '/images/screenshot_smasher.png'
 ---
 
 Am Wochenende haben wir im Zuge des GMTK GameJams unseren "Virusmasher" gebaut.

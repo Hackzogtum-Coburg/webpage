@@ -1,7 +1,7 @@
 ---
 title: "Workshop im Oktober: Wer misst, misst Mist! - 09.10.2018 ab 19:30 Uhr"
 date: "2018-09-16"
-coverImage: '../images/old_multimeter-300x211.jpeg'
+coverImage: '/images/old_multimeter-300x211.jpeg'
 ---
 
 Im Oktober möchte uns eines unserer Mitglieder näher in die Welt der Messtechnik einführen, verschiedene Mess- und Prüfgeräte vorstellen, sowie den richtigen Umgang damit erläutern. Es können auch eigene Geräte mitgebracht werden.

@@ -1,7 +1,7 @@
 ---
 title: "CITIZENFOUR - Vorführung und Diskussion beim Hackzogtum Coburg e.V. - Mittwoch 20.05.2015 19:00 Uhr"
 date: "2015-05-14"
-coverImage: '../images/snowden-204x300.png'
+coverImage: '/images/snowden-204x300.png'
 ---
 
 [![snowden](../images/snowden-204x300.png)](https://hackzogtum-coburg.de/wp-content/uploads/2015/05/snowden.png)

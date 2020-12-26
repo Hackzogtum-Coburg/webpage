@@ -1,7 +1,7 @@
 ---
 title: "Update in Zeiten von Corona"
 date: "2020-04-03"
-coverImage: '../images/signal-attachment-2020-04-03-144818-1-880x1024.jpeg'
+coverImage: '/images/signal-attachment-2020-04-03-144818-1-880x1024.jpeg'
 ---
 
 Auch nach vielen Tagen in denen “Corona” ganz klar unser Medienbild bestimmt, bleibt unsere Kreativität nicht aus. Das Hackzogtum kann sich zwar aktuell nicht treffen, aber viele Mitglieder arbeiten an Lösungen. So ist in den letzten Tagen ein kleiner “Mumble-Server” aufgesetzt worden, welcher einen Virtuellen “Hackerspace” zur Verfügung stellt, auf Wunsch sogar mit Musik.  

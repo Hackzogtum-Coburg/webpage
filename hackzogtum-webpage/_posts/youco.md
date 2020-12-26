@@ -1,7 +1,7 @@
 ---
 title: "YouCo"
 date: "2018-06-11"
-coverImage: '../images/youco-2018.png'
+coverImage: '/images/youco-2018.png'
 ---
 
 Am Sonntag den 24.Juni findet man uns beim YouCo Familientag! Wir zeigen euch unsere 3D-Drucker und was wir sonst so im Hackzogtum machen! Außerdem gibt es wie immer unseren Lötworkshop für die kleinen. Weitere Infos findet ihr hier: http://www.you-co.de/familientag/ [![youco-2018](../images/youco-2018.png)](http://www.you-co.de/familientag/)

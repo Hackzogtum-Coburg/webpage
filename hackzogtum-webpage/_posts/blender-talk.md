@@ -1,7 +1,7 @@
 ---
 title: "Blender Talk"
 date: "2020-06-23"
-coverImage: '../images/modeling02-1024x576.jpg'
+coverImage: '/images/modeling02-1024x576.jpg'
 ---
 
 ![](../images/modeling02-1024x576.jpg)

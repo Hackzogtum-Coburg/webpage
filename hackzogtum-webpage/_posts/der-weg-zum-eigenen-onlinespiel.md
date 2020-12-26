@@ -1,7 +1,7 @@
 ---
 title: "Der Weg zum eigenen Onlinespiel (25.05.2020 20:00 Uhr)"
 date: "2020-05-15"
-coverImage: '../images/technology-3189176_640-e1589567507106.jpg'
+coverImage: '/images/technology-3189176_640-e1589567507106.jpg'
 ---
 
 ![](../images/technology-3189176_640-e1589567507106.jpg)

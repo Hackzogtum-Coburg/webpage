@@ -1,7 +1,7 @@
 ---
 title: "Flipper Enlightenment"
 date: "2018-10-19"
-coverImage: '../images/sm_20180918_215412-300x225.jpg'
+coverImage: '/images/sm_20180918_215412-300x225.jpg'
 ---
 
 Die vereinbarte Miete des Cocktail-Bots [Flipper](https://www.hackerspace-bamberg.de/Flipper "Flipper"), den wir zu / seit unserer Geburtstagsfeier im Frühjahr vom Backspace zur Verfügung gestellt bekamen, war diesem ein Licht-Upgrade zu verpassen.

@@ -1,7 +1,7 @@
 ---
 title: "No Nerd Left Behind!"
 date: "2014-12-23"
-coverImage: '../images/31c3-213x300.png'
+coverImage: '/images/31c3-213x300.png'
 ---
 
 Hallo ihr technikbegeisterten Menschen! Neben der Weihnachtszeit steht ebenfalls der [31\. Chaos Communication Congress](https://events.ccc.de/congress/2014/wiki/Main_Page) (kurz 31c3) bevor. Einige von unseren Mitgliedern fahren in der Zeit zwischen dem 27.12.2014 und dem 30.12.2014 nach Hamburg, um dort an einem mehrtägigen Treffen der internationalen Hackerszene teilzunehmen. Das ganze wird vom Chaos Computer Club ausgerichtet und umfasst 4 Tage an Vorträgen, Workshops und jede Menge Spaß. Aufgrund der für manche Menschen doch etwas ungünstigen zeitlichen (und vielleicht auch örtlichen) Lage des Kongresses, können leider nicht immer alle, die gerne teilnehmen möchten, mitfahren. Deshalb streamen ein paar nette Freiwillige die während des 31C3 abgehaltenen Vorträge in unseren Räumlichkeiten in der Geleitstraße 10 in Coburg! Schaut einfach mal in den [Fahrplan](http://events.ccc.de/congress/2014/Fahrplan/), sucht euch Vorträge aus, die ihr sehen möchtet und kommt vorbei. In der Zeit vom 27.12. bis zum 30.12. haben wir auf jeden Fall zwischen 10:00 und 18:00 Uhr geöffnet. Wollt ihr spätere Vorträge sehen, kommt bitte erst einmal in unseren [Chat](https://hackzogtum-coburg.de/?page_id=36) und fragt nach, ob zu diesem Zeitpunkt noch Freiwillige im Space sein werden. Wir würden uns auf jeden Fall über euer kommen freuen! Viele Grüße euer Hackzogtum [![31c3](../images/31c3-213x300.png)](https://hackzogtum-coburg.de/wp-content/uploads/2014/12/31c3.png)
