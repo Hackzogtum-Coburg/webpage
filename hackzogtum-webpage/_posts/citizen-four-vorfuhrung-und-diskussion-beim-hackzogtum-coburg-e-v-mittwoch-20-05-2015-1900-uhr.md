@@ -18,10 +18,10 @@ Wir vom Hackzogtum Coburg e.V. laden alle Interessierten ein, sich gemeinsam mit
 
 Erneut konnten wir [Stefan Ullrich](https://www.interdisciplinary-laboratory.hu-berlin.de/de/personen/stefan-ullrich "Stefan Ullrich") von der Humboldt-Universität zu Berlin als Gast und Moderator gewinnen.
 
-Stefan Ullrich ist Sprecher der Fachgruppe Â»Informatik und EthikÂ« der Gesellschaft für Informatik und beschäftigt sich seit langem mit den gesellschaftlichen Auswirkungen der Informationstechnik.
+Stefan Ullrich ist Sprecher der Fachgruppe »Informatik und Ethik« der Gesellschaft für Informatik und beschäftigt sich seit langem mit den gesellschaftlichen Auswirkungen der Informationstechnik.
 
 **Termin: Mittwoch 20.05.2015 19:00Uhr**
 
-**Ort: Vereinsräume Hackzogtum Coburg e.V.Â  - Geleitstrasse 10 - 96450 Coburg**
+**Ort: Vereinsräume Hackzogtum Coburg e.V.  - Geleitstrasse 10 - 96450 Coburg**
 
 CITIZENFOUR

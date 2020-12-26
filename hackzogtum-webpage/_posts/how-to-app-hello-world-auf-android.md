@@ -14,7 +14,7 @@ Der Vortrag wird Workshop-Charakter haben, heißt mitmachen ist angesagt.
 
 Wer kann sollte sich schonmal AndroidStudio installieren. Außerdem schadet es nicht ein Android-Smartphone und zugehöriges USB-Kabel dabeizuhaben.
 
-## **Â Bericht:**
+## ** Bericht:**
 
 Nach ein paar Verzögerungen und technischen Problemen die gelöst werden mussten, wurde es spät aber ein Workshop der erst um 02:30 endet und bei dem niemand eingeschlafen ist, war sicherlich nicht uninteressant. Eine Wiederholung, auch mit einer vielleicht etwas weniger steilen Lernkurve, ist geplant.
 

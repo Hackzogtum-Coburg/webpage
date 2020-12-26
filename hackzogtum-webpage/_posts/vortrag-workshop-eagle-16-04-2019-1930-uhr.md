@@ -1,5 +1,5 @@
 ---
-title: "Vortrag / Workshop  â€žEAGLEâ€œ - Update Termin 5 ist am 21.05.2019 19:30 Uhr"
+title: "Vortrag / Workshop  €žEAGLE€œ - Update Termin 5 ist am 21.05.2019 19:30 Uhr"
 date: "2019-05-21"
 coverImage: './images/test..jpg'
 ---

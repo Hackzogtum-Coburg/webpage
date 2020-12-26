@@ -4,9 +4,9 @@ date: "2013-04-25"
 coverImage: './images/placeholder.jpg'
 ---
 
-Am letzten Wochenende 19. - 21.04.2013Â  fand die [PlaidCTF2013](http://plaidctf.com/%29) - eine der größten und bekanntesten Hackingchallenges - statt. Das Team des [backspace Bamberg](http://www.hackerspace-bamberg.de/Hauptseite%29) hat dabei Platz 37 von ca. 900 belegt, wofür ich hier erst einmal einen großen Glückwunsch loswerden möchte: well played oder fränkisch: "ned schlechd".
+Am letzten Wochenende 19. - 21.04.2013  fand die [PlaidCTF2013](http://plaidctf.com/%29) - eine der größten und bekanntesten Hackingchallenges - statt. Das Team des [backspace Bamberg](http://www.hackerspace-bamberg.de/Hauptseite%29) hat dabei Platz 37 von ca. 900 belegt, wofür ich hier erst einmal einen großen Glückwunsch loswerden möchte: well played oder fränkisch: "ned schlechd".
 
-Warum erzähle ich das Ganze? Nun ja ich hatte die Ehre für ein paar Stunden als Gast teilzunehmen und Mischa, der wohl auch bei uns mitmischen wird, ist quasi für 3 Tage bei backspace eingezogen. Für mich gab es zwei große Lehren die ich ziehen konnte: a) "Noch viel zu lernen Du hast"Â  -> Es wird also Zeit, dass wir ihn Coburg was hochziehen. b) "Es macht unglaublich viel Spass" -> Folgerung analog.
+Warum erzähle ich das Ganze? Nun ja ich hatte die Ehre für ein paar Stunden als Gast teilzunehmen und Mischa, der wohl auch bei uns mitmischen wird, ist quasi für 3 Tage bei backspace eingezogen. Für mich gab es zwei große Lehren die ich ziehen konnte: a) "Noch viel zu lernen Du hast"  -> Es wird also Zeit, dass wir ihn Coburg was hochziehen. b) "Es macht unglaublich viel Spass" -> Folgerung analog.
 
 Um was geht's denn überhaupt?
 

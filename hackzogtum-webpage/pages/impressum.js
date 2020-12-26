@@ -1,6 +1,7 @@
 import Container from '../components/container'
 import Intro from '../components/intro'
 import Layout from '../components/layout'
+import Impressum from '../components/impressum'
 import { getAllPosts } from '../lib/api'
 import Head from 'next/head'
 
@@ -13,6 +14,7 @@ export default function info() {
         </Head>
         <Container>
           <Intro />
+          <Impressum />
         </Container>
       </Layout>
     </>

@@ -4,7 +4,7 @@ date: "2020-01-18"
 coverImage: './images/helloworld.png'
 ---
 
-Â 
+ 
 
 ## Update
 
@@ -12,7 +12,7 @@ Nächster Termin ist der 21**. Januar 2020** - 19:30 Uhr.
 
 Wir werden nach einer kurzen Wiederholung, noch einmal auf Automaten eingehen und dann die Ampelsteuerung implementieren.
 
-Â 
+ 
 
 Was im Juli mit vollem Haus und steiler Lernkurve begann, soll im September, mit etwas flacherem Einstieg fortgeführt werden. Wenn du also Interesse am Programmieren allgemein, der Programmiersprache C, dem Entwickeln von Funktionalität auf Arduinos hast, komm vorbei!
 
