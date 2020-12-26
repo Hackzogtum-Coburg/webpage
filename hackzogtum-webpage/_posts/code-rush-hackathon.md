@@ -1,7 +1,7 @@
 ---
 title: "CO:DE Rush Hackathon"
 date: "2018-11-23"
-coverImage: '/images/WhatsApp-Image-2018-11-23-at-23.13.24-300x169.jpeg'
+coverImage: './images/WhatsApp-Image-2018-11-23-at-23.13.24-300x169.jpeg'
 ---
 
 Dieses Wochenende tritt das Hackzogtum beim ersten Coburger Hackathon an! Die Pitches können kostenlos betrachtet werden. Infos unter:Â [https://www.zukunftcoburgdigital.de/code-rush/](https://www.zukunftcoburgdigital.de/code-rush/.)

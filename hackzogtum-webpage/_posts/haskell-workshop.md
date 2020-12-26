@@ -1,7 +1,7 @@
 ---
 title: "Haskell Workshop - Terminumfrage Teil 2"
 date: "2020-02-11"
-coverImage: '/images/Auswahl_020.png'
+coverImage: './images/Auswahl_020.png'
 ---
 
 ![](../images/Auswahl_020.png)

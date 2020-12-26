@@ -1,7 +1,7 @@
 ---
 title: "Blender-Workshop: Konstruktion eines Flaschen-Clips mit Schriftzug"
 date: "2020-10-19"
-coverImage: '/images/testClip_01-1024x542.png'
+coverImage: './images/testClip_01-1024x542.png'
 ---
 
 ### Videoaufzeichnung

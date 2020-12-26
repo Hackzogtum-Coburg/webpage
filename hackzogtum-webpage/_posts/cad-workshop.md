@@ -1,7 +1,7 @@
 ---
 title: "CAD-Workshop"
 date: "2018-11-13"
-coverImage: '/images/technology-3262130_640-300x300.jpg'
+coverImage: './images/technology-3262130_640-300x300.jpg'
 ---
 
 Am Samstag den 17.11 findet ein kleiner Workshop im Hackzogtum statt. Er wird von einem Gast gehalten und ist öffentlich. Um 14:00 startet der Vortrag und zeigt den Umgang mit einem CAD-Programm.

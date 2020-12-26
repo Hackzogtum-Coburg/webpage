@@ -1,7 +1,7 @@
 ---
 title: "Vortrag im Januar! - Update"
 date: "2019-01-14"
-coverImage: '/images/ezgif-2-f6c8ecd7009e-300x169.gif'
+coverImage: './images/ezgif-2-f6c8ecd7009e-300x169.gif'
 ---
 
 Auch im neuen Jahr halten wir uns an den Vortragsplan. Und somit laden wir euch alle ein den Vortrag von "sequarell" zu zuhören. Am 29.1.19 um ca. 19:30 könnt ihr vorbeikommen und lernen wie die Pixelmatrix und der zugehörige Controller funktioniert. Bei Interesse dann sogar im Projekt mit einsteigen. Wir freuen uns auf euch!
