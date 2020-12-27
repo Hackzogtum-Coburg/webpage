@@ -22,6 +22,28 @@ a:hover {
 }
 /* Write you own custom component styles here */
 
+.btn-menu {
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+    background-color: #7c7c7c;
+    border: solid 2px rgb(0, 255, 0);
+    margin: 5px;
+}
+
+.menuBtns {
+    display: flex;
+    justify-content: start;
+}
+
+.headBorder {
+    border-top: solid 1px green;
+    border-bottom: solid 1px green;
+}
+
+.topLogo {
+    margin-top: 15px;
+}
 /* Start purging... */
 @tailwind utilities;
 /* Stop purging. */
