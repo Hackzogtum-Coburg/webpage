@@ -26,9 +26,11 @@ a:hover {
     height: 50px;
     width: 50px;
     overflow: hidden;
-    background-color: #7c7c7c;
+    background-color: #46464600;
     border: solid 2px rgb(0, 255, 0);
     margin: 5px;
+    text-align: center;
+    font-size: xx-large;
 }
 
 .menuBtns {

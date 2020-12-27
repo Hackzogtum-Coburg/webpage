@@ -1,4 +1,6 @@
 import Image from 'next/image'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHome, faPhotoVideo, faInfoCircle, faCodeBranch, faAddressBook, faUserSecret } from "@fortawesome/free-solid-svg-icons"; 
 
 export default function Intro() {
   return (
@@ -17,36 +19,48 @@ export default function Intro() {
         <div className="btnCluster">
           {' '}
           <a href="/" className="underline hover:text-success duration-200 transition-colors">
-            <div className="btn-menu"></div>
+            <div className="btn-menu">
+            <FontAwesomeIcon icon={faHome}></FontAwesomeIcon>
+            </div>
           </a>
 
           {' '}
           <a href="/media" className="underline hover:text-success duration-200 transition-colors">
-            <div className="btn-menu"></div>
+            <div className="btn-menu">
+            <FontAwesomeIcon icon={faPhotoVideo}></FontAwesomeIcon>
+            </div>
           </a>
         </div>
 
         <div className="btnCluster">
           {' '}
           <a href="/info" className="underline hover:text-success duration-200 transition-colors">
-            <div className="btn-menu"></div>
+            <div className="btn-menu">
+            <FontAwesomeIcon icon={faInfoCircle}></FontAwesomeIcon>
+            </div>
           </a>
 
           {' '}
           <a href="/kontakt" className="underline hover:text-success duration-200 transition-colors">
-            <div className="btn-menu"></div>
+            <div className="btn-menu">
+            <FontAwesomeIcon icon={faAddressBook}></FontAwesomeIcon>
+            </div>
           </a>
         </div>
 
         <div className="btnCluster">
           {' '}
           <a href="https://github.com/Hackzogtum-Coburg" className="underline hover:text-success duration-200 transition-colors">
-            <div className="btn-menu"></div>
+            <div className="btn-menu">
+            <FontAwesomeIcon icon={faCodeBranch}></FontAwesomeIcon>
+            </div>
           </a>
 
           {' '}
           <a href="/impressum" className="underline hover:text-success duration-200 transition-colors">
-            <div className="btn-menu"></div>
+            <div className="btn-menu">
+            <FontAwesomeIcon icon={faUserSecret}></FontAwesomeIcon>
+            </div>
           </a>
         </div>
       </h4>
