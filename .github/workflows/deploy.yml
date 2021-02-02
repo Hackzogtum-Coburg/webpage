@@ -25,5 +25,10 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - run: cd hackzogtum-webpage && npm ci
     - run: cd hackzogtum-webpage && npm run build
-    - run: tar -czf hackzogtum-webpage.tar.gz hackzogtum-webpage
-    # TODO: add deploy to server
+    - run: cd hackzogtum-webpage && tar -czf ../hackzogtum-webpage.tar.gz .
+    # upload build to server and deploy
+    - uses: kielabokkie/ssh-key-and-known-hosts-action@v1
+      with:
+        ssh-private-key: ${{ secrets.SHH_DEPLOY_KEY }}
+        ssh-host: 95.217.86.151
+    - run: cat hackzogtum-webpage.tar.gz | ssh website@95.217.86.151
