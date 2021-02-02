@@ -25,7 +25,6 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - run: cd hackzogtum-webpage
-    - run: npm ci
-    - run: npm run build --if-present
-    - run: tar --transform "s/^\./page/" -czf page.tar.gz .
+    - run: cd hackzogtum-webpage && npm ci
+    - run: cd hackzogtum-webpage && npm run build --if-present
+    - run: tar -czf hackzogtum-webpage.tar.gz hackzogtum-webpage
