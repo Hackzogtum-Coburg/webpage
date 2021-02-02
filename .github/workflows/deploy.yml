@@ -1,12 +1,10 @@
 # This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
 
-name: Build package
+name: Build and deploy site
 
 on:
   push:
-    branches: [ main ]
-  pull_request:
     branches: [ main ]
 
 jobs:
@@ -25,7 +23,12 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - run: cd hackzogtum-webpage
-    - run: npm ci
-    - run: npm run build --if-present
-    - run: tar --transform "s/^\./page/" -czf page.tar.gz .
+    - run: cd hackzogtum-webpage && npm ci
+    - run: cd hackzogtum-webpage && npm run build
+    - run: cd hackzogtum-webpage && tar -czf ../hackzogtum-webpage.tar.gz .
+    # upload build to server and deploy
+    - uses: kielabokkie/ssh-key-and-known-hosts-action@v1
+      with:
+        ssh-private-key: ${{ secrets.SHH_DEPLOY_KEY }}
+        ssh-host: 95.217.86.151
+    - run: cat hackzogtum-webpage.tar.gz | ssh website@95.217.86.151
