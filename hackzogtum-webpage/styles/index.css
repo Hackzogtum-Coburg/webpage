@@ -46,6 +46,11 @@ a:hover {
 .topLogo {
     margin-top: 15px;
 }
+
+.readMore {
+    margin: auto;
+    text-align: center;
+}
 /* Start purging... */
 @tailwind utilities;
 /* Stop purging. */

@@ -6,7 +6,7 @@ import { getAllPosts } from '../lib/api'
 import Head from 'next/head'
 
 export default function Index({ allPosts }) {
-  const morePosts = allPosts.slice(0, 20);
+  const morePosts = allPosts.slice(20);
   return (
     <>
       <Layout>
@@ -17,7 +17,6 @@ export default function Index({ allPosts }) {
           <Intro />
           
           {morePosts.length > 0 && <MoreStories posts={morePosts} />}
-          <a href="/showMorePosts" className="underline hover:text-success duration-200 transition-colors"><div className="readMore">SHOW MORE</div></a>
         </Container>
       </Layout>
     </>
