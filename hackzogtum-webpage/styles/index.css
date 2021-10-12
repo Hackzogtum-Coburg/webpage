@@ -17,6 +17,10 @@ body {
     color: green;
 }
 
+a {
+  text-decoration:underline;
+}
+
 a:hover {
     color: rgb(0, 255, 0) !important;
 }
