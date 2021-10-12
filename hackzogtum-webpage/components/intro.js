@@ -50,7 +50,7 @@ export default function Intro() {
 
         <div className="btnCluster">
           {' '}
-          <a href="https://github.com/Hackzogtum-Coburg" className="underline hover:text-success duration-200 transition-colors">
+          <a href="https://github.com/Hackzogtum-Coburg" className="underline hover:text-success duration-200 transition-colors" target="_blank" rel="noopener">
             <div className="btn-menu">
             <FontAwesomeIcon icon={faCodeBranch}></FontAwesomeIcon>
             </div>
