@@ -12,13 +12,13 @@ export default function Info() {
                 Der “Hackzogtum Coburg e.V.” ist ein Verein für Technikinteressierte.<br />
                 Der Verein bietet eine Plattform zum Austausch von Wissen und dem gemeinsamen Arbeiten an Projekten.<br />
                 Auch Öffentlichkeitsarbeit und die Förderung der Allgemeinbildung ist uns wichtig. Hierbei wollen wir allen Interessierten die Möglichkeit geben, ihr Wissen zu erweitern bzw. Ihnen den Zugang zur Technik aller Art zu erleichtern.<br />
-                Zentraler Ort des Vereinslebens ist unser <a href="https://de.wikipedia.org/wiki/Hackerspace" target="_blank" rel="noopener">Hackerspace</a> in der Geleitstrasse 10 in Coburg.</p>
+                Zentraler Ort des Vereinslebens ist unser <a href="https://de.wikipedia.org/wiki/Hackerspace" target="_blank" rel="noreferrer">Hackerspace</a> in der Geleitstrasse 10 in Coburg.</p>
                 <br />
 
                 <p><b>Was ist ein Hackerspace?</b><br />
-                Ein <a href="https://de.wikipedia.org/wiki/Hackerspace" target="_blank" rel="noopener">Hackerspace </a>ist ein offener Raum, in dem sich Hacker zum Austausch oder zum kreativen Umgang mit Technologien treffen. 
-                Hackerspaces gibt es überall auf der Welt und stehen in der Regel mit dem <a href="https://de.wikipedia.org/wiki/Chaos_Computer_Club" target="_blank" rel="noopener">Chaos Computer Club</a> in Verbindung.<br />
-                Einen schönen <a href="http://www.spiegel.de/netzwelt/web/was-ist-eigentlich-ein-hackerspace-a-891543.html" target="_blank" rel="noopener">Artikel</a> hierzu liefert auch der Spiegel.</p>
+                Ein <a href="https://de.wikipedia.org/wiki/Hackerspace" target="_blank" rel="noreferrer">Hackerspace </a>ist ein offener Raum, in dem sich Hacker zum Austausch oder zum kreativen Umgang mit Technologien treffen. 
+                Hackerspaces gibt es überall auf der Welt und stehen in der Regel mit dem <a href="https://de.wikipedia.org/wiki/Chaos_Computer_Club" target="_blank" rel="noreferrer">Chaos Computer Club</a> in Verbindung.<br />
+                Einen schönen <a href="http://www.spiegel.de/netzwelt/web/was-ist-eigentlich-ein-hackerspace-a-891543.html" target="_blank" rel="noreferrer">Artikel</a> hierzu liefert auch der Spiegel.</p>
                 <br />
 
                 <p><b>Ihr seid also Hacker?</b><br />

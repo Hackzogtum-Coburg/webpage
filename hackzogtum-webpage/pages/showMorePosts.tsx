@@ -7,7 +7,6 @@ import { getAllPostsProps, PostsProps } from '../lib/blog-utils'
 
 
 export default function Index({ allPosts }: PostsProps) {
-  const morePosts = allPosts.slice(20);
   return (
     <>
       <Layout>
@@ -17,7 +16,7 @@ export default function Index({ allPosts }: PostsProps) {
         <Container>
           <Intro />
           
-          {morePosts.length > 0 && <MoreStories allPosts={morePosts} />}
+          {allPosts.length > 0 && <MoreStories allPosts={allPosts} />}
         </Container>
       </Layout>
     </>
