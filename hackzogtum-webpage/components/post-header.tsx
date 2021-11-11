@@ -1,9 +1,8 @@
-import Avatar from '../components/avatar'
 import DateFormatter from '../components/date-formatter'
-import CoverImage from '../components/cover-image'
 import PostTitle from '../components/post-title'
+import { IPost } from '../lib/blog-utils'
 
-export default function PostHeader({ title, coverImage, date, author }) {
+export default function PostHeader({ title, coverImage, date/*, author*/ }: IPost) {
   return (
     <>
       <PostTitle>{title}</PostTitle>

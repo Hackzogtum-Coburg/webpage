@@ -1,8 +1,11 @@
+import Link from 'next/link'
+
+
 export default function Info() {
     return (
-      <info>
+      <div>
             <h3>Über uns</h3>     
-            <div class="entry-content">
+            <div className="entry-content">
                 <p>Du hast sicher einige Fragen an uns.</p> <br />
 
                 <p><b>Was ist das Hackzogtum?</b><br />
@@ -56,16 +59,16 @@ export default function Info() {
                 <p><b>Ich habe noch mehr Fragen…</b><br />
                 Super! Das ist die richtige Einstellung! Denn Fragen sind das was uns antreibt.<br />
                 Wenn wir Dein Interesse geweckt haben, sei herzlich willkommen mit uns Kontakt aufzunehmen.<br />
-                Einige Möglichkeiten dies zu tun, findest Du unter der Kategorie “<a href="/kontakt">Kontakt</a>” auf dieser Homepage.</p>
+                Einige Möglichkeiten dies zu tun, findest Du unter der Kategorie “<Link href="/kontakt">Kontakt</Link>” auf dieser Homepage.</p>
                 <br />
 
                 <p><b>Du willst Mitglied werden?</b><br />
-                Schau doch einfach mal vorbei! Und wenn du die sicher bist findest du das Formular dazu <a title="Tritt bei" href="/beitritt">hier</a>.</p>
+                Schau doch einfach mal vorbei! Und wenn du die sicher bist findest du das Formular dazu <Link href="/beitritt">hier</Link>.</p>
                 <br/>
 
                 <p>Wir freuen uns!<br />
                 Dein Hackzogtum Coburg</p>
             </div>
-      </info>
+      </div>
     )
   }

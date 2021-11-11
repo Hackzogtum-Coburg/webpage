@@ -1,10 +1,10 @@
 import Container from '../components/container'
 import Intro from '../components/intro'
 import Layout from '../components/layout'
-import { getAllPosts } from '../lib/api'
+import Beitritt from '../components/beitritt'
 import Head from 'next/head'
 
-export default function info() {
+export default function beitritt() {
   return (
     <>
       <Layout>
@@ -13,23 +13,9 @@ export default function info() {
         </Head>
         <Container>
           <Intro />
+          <Beitritt />
         </Container>
       </Layout>
     </>
   )
-}
-
-export async function getStaticProps() {
-  const allPosts = getAllPosts([
-    'title',
-    'date',
-    'slug',
-    'author',
-    'coverImage',
-    'excerpt',
-  ])
-
-  return {
-    props: { allPosts },
-  }
 }
