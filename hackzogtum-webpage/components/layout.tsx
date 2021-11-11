@@ -1,7 +1,8 @@
+import { PropsWithChildren } from 'react'
 import Footer from '../components/footer'
 import Meta from '../components/meta'
 
-export default function Layout({ preview, children }) {
+export default function Layout({ children }: PropsWithChildren<any>) {
   return (
     <>
       <Meta />

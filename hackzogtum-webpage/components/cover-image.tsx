@@ -1,7 +1,14 @@
 import cn from 'classnames'
 import Link from 'next/link'
 
-export default function CoverImage({ title, src, slug }) {
+
+export interface CoverData {
+  title: string,
+  src: string,
+  slug: string,
+}
+
+export default function CoverImage({ title, src, slug }: CoverData) {
   const image = (
     <img
       src={src}
@@ -11,6 +18,7 @@ export default function CoverImage({ title, src, slug }) {
       })}
     />
   )
+  
   return (
     <div className="sm:mx-0">
       {slug ? (

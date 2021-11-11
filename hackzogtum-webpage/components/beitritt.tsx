@@ -1,8 +1,8 @@
 export default function Beitritt() {
     return (
-      <info>
+      <div>
             <h3>Tritt bei</h3>     
-            <div class="entry-content">
+            <div className="entry-content">
                 <p>Schön, dass du den Weg hierher gefunden hast. Es sind nur noch ein paar kleine Schritte bis auch du Teil des Hackzogtum Coburg bist.</p> <br />
 
                 <p><b>0. Lies die <a href="/assets/Satzung_Hackzogtum_Coburg_e.V._2015-05-09.pdf" target="_blank" rel="noopener">Satzung</a>.</b></p>
@@ -30,6 +30,6 @@ export default function Beitritt() {
 
                 <p><b>5. Bringe dich ein.</b><br /></p>
             </div>
-      </info>
+      </div>
     )
   }

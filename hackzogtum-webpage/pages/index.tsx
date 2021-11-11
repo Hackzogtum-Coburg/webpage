@@ -2,10 +2,11 @@ import Container from '../components/container'
 import MoreStories from '../components/more-stories'
 import Intro from '../components/intro'
 import Layout from '../components/layout'
-import { getAllPosts } from '../lib/api'
+import { getAllPostsProps, PostsProps } from '../lib/blog-utils'
 import Head from 'next/head'
+import Link from 'next/link'
 
-export default function Index({ allPosts }) {
+export default function Index({ allPosts }: PostsProps) {
   const morePosts = allPosts.slice(0, 20);
   return (
     <>
@@ -16,25 +17,16 @@ export default function Index({ allPosts }) {
         <Container>
           <Intro />
           
-          {morePosts.length > 0 && <MoreStories posts={morePosts} />}
-          <a href="/showMorePosts" className="underline hover:text-success duration-200 transition-colors"><div className="readMore">SHOW MORE</div></a>
+          {morePosts.length > 0 && <MoreStories allPosts={morePosts} />}
+          <Link href="/showMorePosts">
+            <a className="underline hover:text-success duration-200 transition-colors">
+              <div className="readMore">SHOW MORE</div>
+            </a>
+          </Link>
         </Container>
       </Layout>
     </>
   )
 }
 
-export async function getStaticProps() {
-  const allPosts = getAllPosts([
-    'title',
-    'date',
-    'slug',
-    'author',
-    'coverImage',
-    'excerpt',
-  ])
-
-  return {
-    props: { allPosts },
-  }
-}
+export const getStaticProps = getAllPostsProps(0, 20);

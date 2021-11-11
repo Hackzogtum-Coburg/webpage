@@ -1,16 +1,16 @@
-import Avatar from '../components/avatar'
 import DateFormatter from '../components/date-formatter'
 import CoverImage from './cover-image'
 import Link from 'next/link'
+import { IPost } from '../lib/blog-utils'
 
 export default function PostPreview({
   title,
   coverImage,
   date,
-  excerpt,
-  author,
+  // excerpt,
+  // author,
   slug,
-}) {
+}: IPost) {
   return (
     <div>
       <div className="mb-5">
@@ -24,7 +24,7 @@ export default function PostPreview({
       <div className="text-lg mb-4">
         <DateFormatter dateString={date} />
       </div>
-      <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
+      {/* <p className="text-lg leading-relaxed mb-4">{excerpt}</p> */}
     </div>
   )
 }
