@@ -42,15 +42,23 @@ export default function Post({ post }: PostProps) {
 }
 
 export const getStaticProps: GetStaticProps = async context => {
-  // TODO: fix this typing as slug can be other things too
-  const slug = context.params?.slug as string;
-  const post = await getPostBySlug(slug);
-
-  return {
-    props: {
-      post,
-    },
+  const query = context.params;
+  if (query) {
+    const slug = query.slug;
+    if (typeof(slug) === 'string') {
+      const post = await getPostBySlug(slug);
+      return {
+        props: {
+          post,
+        },
+      };
+    }
   }
+
+  // display 404
+  return {
+    notFound: true,
+  };
 };
 
 export const getStaticPaths: GetStaticPaths = async () => {
