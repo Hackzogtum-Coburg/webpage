@@ -1,7 +1,7 @@
 ---
 title: "Workshop BlenderCAM"
 date: "2020-11-17"
-coverImage: './images/blendercampic.jpg'
+coverImage: '/images/blendercampic.jpg'
 ---
 
 Termin: 24. 11. 2020 - 21:00 Uhr  
@@ -10,6 +10,6 @@ Needed Software:
 Die eigentlich Quelle: [blenderCAM.](https://blendercam.blogspot.com/p/blender-cam-description.html)  
 Da die Installation etwas schwierig ist, bitte aber die [Workshop-Version](https://hackzogtum-coburg.de/~legion/stuff/blCAM.zip) (Linux) runterladen.
 
-![](../images/blendercampic.jpg)
+![](/images/blendercampic.jpg)
 
 Wie man eine CNC-Fräße dazu bringen kann ein virtuelles 3D-Modell aus einem Stück Material zu befreien, soll in unserem nächsten Vortrag gezeigt werden. [BlenderCAM](https://blendercam.blogspot.com/) ist eine erweiterte Variante von Blender mit entsprechenden Möglichkeiten, die im Workshop vorgestellt werden. Weiter sollen Erfahrungen aus bisherigen Projekten geteilt werden.

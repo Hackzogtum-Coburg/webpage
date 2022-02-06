@@ -1,10 +1,10 @@
 ---
 title: "CITIZENFOUR - Vorführung und Diskussion beim Hackzogtum Coburg e.V. - Mittwoch 20.05.2015 19:00 Uhr"
 date: "2015-05-14"
-coverImage: './images/snowden-204x300.png'
+coverImage: '/images/snowden-204x300.png'
 ---
 
-[![snowden](../images/snowden-204x300.png)](https://hackzogtum-coburg.de/wp-content/uploads/2015/05/snowden.png)
+![snowden](/images/snowden-204x300.png)
 
 Als Laura Poitras im Januar 2013 eine verschlüsselte Email von einem "CITIZENFOUR" erhält, beginnt die wohl bekannteste und weitreichendste Enthüllungskampagne der letzten Jahre über die umfassenden und illegalen Abhör- und Überwachungspraktikten der Geheimdienste.
 

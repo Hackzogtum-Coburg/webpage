@@ -1,16 +1,16 @@
 ---
 title: "GMTK GameJam 2020"
 date: "2020-07-07"
-coverImage: './images/screenshot_smasher.png'
+coverImage: '/images/screenshot_smasher.png'
 ---
 
 Am Wochenende haben wir im Zuge des GMTK GameJams unseren "Virusmasher" gebaut.
 
-![](../images/virussmashlogo.png)
+![](/images/virussmashlogo.png)
 
 Im Spiel musst Du zufällige Tasten schnell hintereinander drücken, während du mit der Maus Computerviren auf dem Monitor bekämpfst.
 
-![](../images/screenshot_smasher.png)
+![](/images/screenshot_smasher.png)
 
 Ausprobieren kannst das auf [https://valplusplusle.itch.io/virus-smasher](https://valplusplusle.itch.io/virus-smasher)
 
@@ -18,7 +18,7 @@ Unter [https://itch.io/jam/gmtk-2020/entries](https://itch.io/jam/gmtk-2020/entr
 
 * * *
 
-![](../images/ZgF6D_-1024x513.png)
+![](/images/ZgF6D_-1024x513.png)
 
 In wenigen Tagen ist es soweit! Der GMTK GameJam startet am 10.Juli und wir nehmen Teil.  
 Jeder der dabei sein möchte kann sich in dieser [Liste](https://blank42.de/wolke/index.php/apps/polls/s/3Jl2PbL71iBtMSbY) eintragen.  

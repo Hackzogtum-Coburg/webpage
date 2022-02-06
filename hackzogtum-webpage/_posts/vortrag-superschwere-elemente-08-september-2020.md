@@ -1,10 +1,10 @@
 ---
 title: "Vortrag: Superschwere Elemente - 29. September 2020"
 date: "2020-09-04"
-coverImage: './images/Periodensystem_Einfach-1024x537.png'
+coverImage: '/images/Periodensystem_Einfach-1024x537.png'
 ---
 
-![](../images/Periodensystem_Einfach-1024x537.png)
+![](/images/Periodensystem_Einfach-1024x537.png)
 
 **Update: Der Vortrag wurde auf den 29. September verschoben!**
 
