@@ -4,7 +4,7 @@ date: "2020-02-11"
 coverImage: '/images/Auswahl_020.png'
 ---
 
-![](../images/Auswahl_020.png)
+![](/images/Auswahl_020.png)
 
 **Die Terminumfrage für den zweiten Teil findet sich unter:**  
 [\--> Terminumfrage <--](https://oc.electrologic.org/apps/polls/s/6nTOiHZBCjZAQmBp)

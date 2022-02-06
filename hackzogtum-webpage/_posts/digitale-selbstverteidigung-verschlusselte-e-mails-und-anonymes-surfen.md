@@ -1,7 +1,7 @@
 ---
 title: "Digitale Selbstverteidigung - Verschlüsselte E-Mails und anonymes Surfen"
 date: "2013-07-19"
-coverImage: './images/placeholder.jpg'
+coverImage: '/images/placeholder.jpg'
 ---
 
 €žJeder muss sich selbst um die Sicherheit seiner Daten kümmern€œ, so hat es Bundesinnenminister Friedrich nach seinem USA-Besuch in einem Interview gesagt. Für den normalen Computernutzer ist Datensicherheit wirklich Neuland: Wie funktioniert eigentlich eine E-Mail? Wie können Unbefugte darauf zugreifen? Wie können Sie Ihre E-Mails verschlüsseln? Das _Hackzogtum Coburg_, eine Vereinigung von Coburger Technikinteressierten aus dem Umfeld des Chaos Computer Clubs, will hier weiter helfen. Daher laden wir zusammen mit den _Wirtschaftsjunioren Coburg e.V._ interessierte Computernutzer aller Altersgruppen am kommenden Donnerstag, den **25\. Juli** ab **19:30 Uhr** zu einer Informationsveranstaltung im **Raum 5-1** der **Hochschule Coburg** [(Campus Friedrich-Streib-Straße 2)](https://maps.google.de/maps?q=Friedrich-Streib-Stra%C3%9Fe+2,+Coburg&hl=de&ie=UTF8&ll=50.264807,10.950885&spn=0.002856,0.004823&sll=48.917413,11.407993&sspn=6.014634,9.876709&t=h&hnear=Friedrich-Streib-Stra%C3%9Fe+2,+96450+Coburg&z=18) ein. Durch Vorträge und Beispiele von Experten aus dem Bereich Computersicherheit zeigen wir Ihnen, wie Sie es Unberechtigten schwer machen, Ihre E-Mails zu lesen oder Ihren Spuren im Internet zu folgen. Anschließend stehen Ihnen unsere Mitglieder helfend zur Seite, wenn Sie auf Ihrem mitgebrachten Laptop selbst eine E-Mail- oder Festplattenverschlüsselung einrichten möchten.

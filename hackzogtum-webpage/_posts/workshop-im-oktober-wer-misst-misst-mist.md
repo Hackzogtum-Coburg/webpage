@@ -14,8 +14,8 @@ Im Oktober möchte uns eines unserer Mitglieder näher in die Welt der Messtechn
 
 **09.10.2018 ab 19:30 Uhr Hackzogtum Coburg - Space Geleitstrasse 10 96450 Coburg**
 
-[![old_multimeter](../images/old_multimeter-300x211.jpeg)](https://hackzogtum-coburg.de/wp-content/uploads/2018/09/old_multimeter.jpeg)
+![old_multimeter](/images/old_multimeter-300x211.jpeg)
 
 ## **Impressionen:**
 
-[![collage](../images/collage-300x200.png)](https://hackzogtum-coburg.de/wp-content/uploads/2018/09/collage.png)
+![collage](/images/collage-300x200.png)
