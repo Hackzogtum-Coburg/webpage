@@ -1,7 +1,7 @@
 ---
 title: "Stellungnahme zur Corona-Datenspende-App"
 date: "2020-04-13"
-coverImage: './images/placeholder.jpg'
+coverImage: '/images/placeholder.jpg'
 ---
 
 Als gemeinnütziger Verein, der sich auch mit den Themen Datenschutz und Datensicherheit auseinandersetzt, sehen wir uns in der Verantwortung, eine Stellungnahme zu "Corona-Datenspende-Apps" abzugeben:

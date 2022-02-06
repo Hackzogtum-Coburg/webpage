@@ -1,7 +1,7 @@
 ---
 title: "Vortrag September - C-Workshop reloaded"
 date: "2020-01-18"
-coverImage: './images/helloworld.png'
+coverImage: '/images/helloworld.png'
 ---
 
  
