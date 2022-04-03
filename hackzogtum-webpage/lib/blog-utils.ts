@@ -5,7 +5,7 @@ import { GetStaticProps } from 'next';
 import remark from 'remark'
 import html from 'remark-html'
 import { VFileCompatible } from 'vfile'
-import { BLOG_TITLE, BLOG_URL } from './constants';
+import { BLOG_SUBTITLE, BLOG_TITLE, BLOG_URL } from './constants';
 
 
 const postsDirectory = join(process.cwd(), '_posts');
@@ -97,14 +97,17 @@ export function getAllPostsProps(from: number, to?: number): GetStaticProps<Post
 
 
 export async function generateRssItem(post: IPost) {
+  // remove relative URLs
+  let cleanedContent = post.content_html.replaceAll('src="../images/', `src="${BLOG_URL}/images`)
+
   return `
     <item>
       <guid>${BLOG_URL}/posts/${post.slug}</guid>
       <title>${post.title}</title>
-      <!--description>{post.excerpt}</description-->
+      <description>${post.title}</description>
       <link>${BLOG_URL}/posts/${post.slug}</link>
       <pubDate>${new Date(post.date).toUTCString()}</pubDate>
-      <content:encoded><![CDATA[${post.content_html}]]></content:encoded>
+      <content:encoded><![CDATA[${cleanedContent}]]></content:encoded>
     </item>
   `
 }
@@ -118,10 +121,10 @@ export async function generateRss(posts: IPost[]) {
       <channel>
         <title>${BLOG_TITLE}</title>
         <link>${BLOG_URL}/</link>
-        <!--description>{BLOG_SUBTITLE}</description-->
+        <description>${BLOG_SUBTITLE}</description>
         <language>en</language>
         <lastBuildDate>${lastDate}</lastBuildDate>
-        <atom:link href="${BLOG_URL}/" rel="self" type="application/rss+xml"/>
+        <atom:link href="${BLOG_URL}/feed.xml" rel="self" type="application/rss+xml"/>
         ${itemsList.join('')}
       </channel>
     </rss>

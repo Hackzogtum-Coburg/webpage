@@ -8,7 +8,7 @@ Auch nach vielen Tagen in denen “Corona” ganz klar unser Medienbild bestimmt
 Manche Mitglieder befassen sich sogar damit aktiv den Virus zu bekämpfen, durch Unterstützung systemrelevanter Personen. So steht der 3d-Drucker unseres Mitglieds “benmaxrei” quasi nicht mehr still.  
 Fleißig druckt und bastelt er Schutzmasken gegen Tröpfcheninfektionen für verschiedenste Menschen in der Region. Vorallem im Bereich der Medizin werden diese dringend benötigt und angenommen.  
 Wer selbst mit produzieren möchte, kann sicher an einem Abend auf dem Mumble den ein oder anderen Tipp zur Produktion bekommen.  
-Bleibt zuhause und vorallem bleibt gesund:)
+Bleibt zuhause und vorallem bleibt gesund:)
 
 - ![](../images/signal-attachment-2020-04-03-144818-1-880x1024.jpeg)
     
