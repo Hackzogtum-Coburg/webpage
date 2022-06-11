@@ -57,6 +57,10 @@ a:hover {
     text-align: center;
 }
 
+.postPreviewContainer {
+    margin: 10px;
+}
+
 /* Start purging... */
 @tailwind utilities;
 /* Stop purging. */

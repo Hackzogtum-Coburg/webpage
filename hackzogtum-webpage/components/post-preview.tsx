@@ -12,7 +12,7 @@ export default function PostPreview({
   slug,
 }: IPost) {
   return (
-    <div>
+    <div className="postPreviewContainer">
       <div className="mb-5">
         <CoverImage slug={slug} title={title} src={coverImage} />
       </div>
