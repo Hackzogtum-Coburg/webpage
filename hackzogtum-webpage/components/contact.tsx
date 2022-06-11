@@ -27,7 +27,7 @@ export default function Contact() {
                 Schreib an <a href="mailto:info@hackzogtum-coburg.de">info@hackzogtum-coburg.de</a><br />
                 <br />
                 <strong>7. Komm vorbei!</strong><br />
-                Unsere Räume in der Geleitstraße 10 in Coburg stehen jedem Interessierten offen.<br />
+                Unsere Räume in der Heiligkreuzstraße 3 in Coburg stehen jedem Interessierten offen.<br />
                 {/* Ob der Space gerade offen hat siehst du <a title="Open/Closed" href="https://hackzogtum-coburg.de/?page_id=869">hier</a>.<br /> */}
                 Unser regelmäßiger Mitgliedertreff findet jeden Dienstag ab 20Uhr statt.<br />
                 BringYourOwnDevice! Die Erfahrung lehrt: Bring am besten einen Laptop mit. Diesen Tip unterstützen die meisten, die das erste Mal da waren.</p>
