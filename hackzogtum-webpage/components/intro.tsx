@@ -20,7 +20,8 @@ export default function Intro() {
         <div className="btnCluster">
           {' '}
           <Link href="/">
-            <a className="underline hover:text-success duration-200 transition-colors">
+            <a className="underline hover:text-success duration-200 transition-colors"
+            title="Home">
               <div className="btn-menu">
               <FontAwesomeIcon icon={faHome}></FontAwesomeIcon>
               </div>
@@ -29,7 +30,8 @@ export default function Intro() {
 
           {' '}
           <Link href="/media">
-            <a className="underline hover:text-success duration-200 transition-colors">
+            <a className="underline hover:text-success duration-200 transition-colors"
+            title="Media">
               <div className="btn-menu">
               <FontAwesomeIcon icon={faPhotoVideo}></FontAwesomeIcon>
               </div>
@@ -40,7 +42,8 @@ export default function Intro() {
         <div className="btnCluster">
           {' '}
           <Link href="/info">
-            <a className="underline hover:text-success duration-200 transition-colors">
+            <a className="underline hover:text-success duration-200 transition-colors"
+            title="Info">
               <div className="btn-menu">
               <FontAwesomeIcon icon={faInfoCircle}></FontAwesomeIcon>
               </div>
@@ -49,7 +52,8 @@ export default function Intro() {
 
           {' '}
           <Link href="/kontakt">
-            <a className="underline hover:text-success duration-200 transition-colors">
+            <a className="underline hover:text-success duration-200 transition-colors"
+            title="Kontakt">
               <div className="btn-menu">
               <FontAwesomeIcon icon={faAddressBook}></FontAwesomeIcon>
               </div>
@@ -59,7 +63,11 @@ export default function Intro() {
 
         <div className="btnCluster">
           {' '}
-          <a href="https://github.com/Hackzogtum-Coburg" className="underline hover:text-success duration-200 transition-colors" target="_blank" rel="noreferrer">
+          <a href="https://github.com/Hackzogtum-Coburg" 
+          className="underline hover:text-success duration-200 transition-colors" 
+          target="_blank" 
+          title="Github Profile"
+          rel="noreferrer">
             <div className="btn-menu">
             <FontAwesomeIcon icon={faCodeBranch}></FontAwesomeIcon>
             </div>
@@ -67,7 +75,8 @@ export default function Intro() {
 
           {' '}
           <Link href="/impressum">
-            <a className="underline hover:text-success duration-200 transition-colors">
+            <a className="underline hover:text-success duration-200 transition-colors"
+            title="Impressum">
               <div className="btn-menu">
               <FontAwesomeIcon icon={faUserSecret}></FontAwesomeIcon>
               </div>
