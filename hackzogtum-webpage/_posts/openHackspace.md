@@ -4,6 +4,8 @@ date: "2022-08-16"
 coverImage: './images/facade.png'
 ---
 
+![](../images/facade.png)
+
 Im Zuge des [Tags des offenen Hackspaces](https://www.ccc.de/de/updates/2022/offenehackerspaces) bei dem über 50 Hackspaces auf der ganzen Welt ihre Türen öffnen, will auch das Hackzogtum Coburg Interessierte und Neugierige in den neuen Räumlichkeiten in der Heiligkreuzstr. 3 in Coburg herzlich willkommen heißen. 
 Zwar sind Interessierte bei uns immer gern gesehen, an diesem Tag geht es aber vor allem darum uns Euch vorzustellen, Projekte zu zeigen, sich auszutauschen und auch darum ein paar Hacking-Mythen zu zerlegen.
 Ein Hackspace ist Raum und Ort für Gleichgesinnte, die sich v.a. mit Computern, Elektronik, Technik allgemein und dem Basteln und Verbasteln von Dingen beschäftigen.
