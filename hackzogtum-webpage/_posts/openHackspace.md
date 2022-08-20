@@ -1,5 +1,5 @@
 ---
-title: "Tag des offenen Hackspaces im Hackzogtum Coburg"
+title: "Tag des offenen Hackspaces im Hackzogtum Coburg - 27.08.22"
 date: "2022-08-16"
 coverImage: './images/facade.png'
 ---
