@@ -1,5 +1,5 @@
 ---
-title: "Vortrag: Anki - die quelloffene Lernsoftware am 27.09.2022"
+title: "Vortrag: Anki - die quelloffene Lernsoftware am 27.09.2022 - 20:00 Uhr - Hlg. Kreuzstr. 3 in Coburg"
 date: "2022-09-21"
 coverImage: './images/anki.png'
 ---
@@ -17,3 +17,6 @@ Was euch bei dem Vortrag erwartet:
 - Bilder, Videos, und Audiodateien einfügen
 - Ich möchte meine Karten mit anderen teilen, geht das? 
 - Gamification: Mehr Spass mit Anki durch Addons
+
+Der Vortag beginnt um 20:00 Uhr und findet im Space in der Heiligkreuzstr. 3 in Coburg statt.
+
