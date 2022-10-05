@@ -1,7 +1,7 @@
 ---
 title: "Toiletten Upcycling mit IOT - Das Projekt KloPi am 18.10.2022 - 20:00 Uhr - Hlg. Kreuzstr. 3 in Coburg"
 date: "2022-10-05"
-coverImage: './images/flus.jpg'
+coverImage: './images/flush.jpg'
 ---
 
 ![](../images/flush.jpg)
