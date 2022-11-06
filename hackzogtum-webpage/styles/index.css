@@ -60,6 +60,10 @@ a:hover {
 .postPreviewContainer {
     margin: 10px;
 }
+.hiddenLink {
+    visibility:hidden;
+    display:none;
+}
 
 /* Start purging... */
 @tailwind utilities;
