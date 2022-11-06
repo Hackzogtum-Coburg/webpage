@@ -29,7 +29,7 @@ export default function Post({ post }: PostProps) {
                 <title>
                   {post.title}
                 </title>
-                {/* <meta property="og:image" content={post.ogImage.url} /> */}
+                <meta property="og:image" content={post.ogImage} />
               </Head>
               <PostHeader {...post} />
               <PostBody {...post} />

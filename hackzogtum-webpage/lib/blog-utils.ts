@@ -16,7 +16,7 @@ export interface IPost {
   date: string,
   slug: string,
   // author: string,
-  // ogImage: string,
+  ogImage: string,
   coverImage: string,
   // content_md: string,
   content_html: string,
@@ -35,9 +35,13 @@ export function getPostSlugs() {
 
 
 function fromPostData<T>(data: {[key: string]: any}, field: string): T {
-  const val = data[field];
-  // TODO: add proper type check
-  return val as T;
+  if(!data[field]){
+    return '' as any as T;
+  } else {
+    let val = data[field];
+    // TODO: add proper type check
+    return val as T;
+  }
 }
 
 export async function getPostBySlug(slug: string): Promise<IPost> {
@@ -53,7 +57,7 @@ export async function getPostBySlug(slug: string): Promise<IPost> {
     date: fromPostData(data, 'date'),
     slug: realSlug,
     // author: fromPostData(data, 'author'),
-    // ogImage: fromPostData(data, 'ogImage'),
+    ogImage: fromPostData(data, 'ogImage'),
     coverImage: fromPostData(data, 'coverImage'),
     // content_md: content,
     content_html,

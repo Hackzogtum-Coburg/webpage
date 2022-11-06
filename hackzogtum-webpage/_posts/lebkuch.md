@@ -2,6 +2,7 @@
 title: "Lebkuchen-Backabend - Wir machen die weltbesten Lebkuchen von Welt wo gibt am 15.11.2022 - 19:00 Uhr - Hlg. Kreuzstr. 3 in Coburg"
 date: "2022-11-06"
 coverImage: './images/Lebkuechner_Landauer.jpg'
+ogImage: 'https://hackzogtum-coburg.de/images/Lebkuechner_Landauer.jpg'
 ---
 
 ![](../images/Lebkuechner_Landauer.jpg)

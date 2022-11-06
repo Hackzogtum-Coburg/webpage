@@ -13,7 +13,7 @@ export default function Meta() {
         name="description"
         content={`The page of Hackzogtum Coburg.`}
       />
-      <meta property="og:image" content={HOME_OG_IMAGE_URL} />
+      {/*<meta property="og:image" content={HOME_OG_IMAGE_URL} />*/}
     </Head>
   )
 }
