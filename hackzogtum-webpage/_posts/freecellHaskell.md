@@ -1,5 +1,5 @@
 ---
-title: "Vortrag - am 24.01.2023 - 20:00 Uhr - Hlg. Kreuzstr. 3 in Coburg"
+title: "Vortrag - Freecell-Solver, in Haskell  - am 24.01.2023 - 20:00 Uhr - Hlg. Kreuzstr. 3 in Coburg"
 date: "2023-01-09"
 coverImage: './images/freecellHaskell.png'
 ogImage: 'https://hackzogtum-coburg.de/images/freecellHaskell.png'
