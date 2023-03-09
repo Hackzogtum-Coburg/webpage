@@ -1,11 +1,11 @@
 ---
 title: "Vortrag - LoRa - Kleine Leistung, Große Wirkung - am 25.03.2023 - abends - Hlg. Kreuzstr. 3 in Coburg"
 date: "2023-03-09"
-coverImage: './images/loraWorkshop.jpeg.png'
-ogImage: 'https://hackzogtum-coburg.de/images/loraWorkshop.jpeg.png'
+coverImage: './images/loraWorkshop.jpeg'
+ogImage: 'https://hackzogtum-coburg.de/images/loraWorkshop.jpeg'
 ---
 
-![](../images/loraWorkshop.jpeg.png)
+![](../images/loraWorkshop.jpeg)
 
 ---
 
