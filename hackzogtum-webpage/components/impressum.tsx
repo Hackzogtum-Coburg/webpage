@@ -20,7 +20,7 @@ export default function Impressum() {
             <tbody>
             <tr>
             <td>Telefon:</td>
-            <td>0160 947 284 15</td>
+            <td>0049 151 423 696 73</td>
             </tr>
             <tr>
             <td>E-Mail:</td>
