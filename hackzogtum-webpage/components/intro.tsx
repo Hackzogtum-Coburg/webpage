@@ -41,7 +41,7 @@ export default function Intro() {
 
       {data && (
         <div className='m-10 grow'>
-          <p style={{color: "#00ff00"}}>Die Space Tür ist {data.open ? 'offen' : 'geschlossen'}.</p>
+          <p style={{color: "#00ff00"}}>Die Space Tür ist <span style={{ color: data.open ? '#00ff00' : '#ff0000' }}>{data.open ? 'offen' : 'geschlossen'}</span>.</p>
           <div className='flex flex-row justify-items-start'>
             <div className='mr-1' style={{color: "#00ff00"}}>Anwesend: </div>
             {data.sensors["in space"].map((item: boolean | ReactChild | ReactFragment | ReactPortal | null | undefined, index: Key | null | undefined) => (
