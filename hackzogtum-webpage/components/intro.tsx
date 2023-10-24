@@ -8,15 +8,15 @@ import { Key, ReactChild, ReactFragment, ReactPortal, useEffect, useState } from
 
 export default function Intro() {
 
-  const [data, setData] = useState<{ api: string, sensors: any } | null>(null);
+  const [data, setData] = useState<{
+    open: any; api: string, sensors: any 
+} | null>(null);
 
   useEffect(() => {
     fetch('https://spaceapi.hackzogtum-coburg.de/')
       .then((response) => response.json())
       .then((data) => {
-        // Hier kannst du mit den API-Daten arbeiten
         console.log(data);
-        // Setze den API-Rückgabewert in einen State, um ihn in der Komponente anzuzeigen
         setData(data);
       })
       .catch((error) => {
@@ -29,22 +29,26 @@ export default function Intro() {
     <section className="flex-col md:flex-row flex items-center md:justify-between mt-16 mb-16 md:mb-12 headBorder">
       <a className="hiddenLink" rel="me" href="https://chaos.social/@Hackzogtum">Mastodon</a>
       <h1 className="text-6xl md:text-8xl font-bold tracking-tighter leading-tight md:pr-8">
-        <div className="topLogo">
+      <div className="topLogo">
         <Image
-          src="/images/logo.png"
+          src={data?.open ? '/images/open.gif' : '/images/logo.png'}
           alt="Picture of the author"
           width={280}
           height={150}
         />
-        </div>
+      </div>
       </h1>
 
-
       {data && (
-        <div>
-          {data.sensors["in space"].map((item: boolean | ReactChild | ReactFragment | ReactPortal | null | undefined, index: Key | null | undefined) => (
-            <h1 key={index}>{item}</h1>
-          ))}
+        <div className='m-10 grow'>
+          <p style={{color: "#00ff00"}}>Die Space Tür ist {data.open ? 'offen' : 'geschlossen'}.</p>
+          <div className='flex flex-row justify-items-start'>
+            <div className='mr-1' style={{color: "#00ff00"}}>Anwesend: </div>
+            {data.sensors["in space"].map((item: boolean | ReactChild | ReactFragment | ReactPortal | null | undefined, index: Key | null | undefined) => (
+              <div className='mr-1' style={{color: "#008000"}} key={index}><h1>{item}{index !== data.sensors["in space"].length - 1 && <span>, </span>}</h1></div>
+            ))}
+          </div>
+
         </div>
       )}
 
