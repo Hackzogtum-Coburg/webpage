@@ -2,21 +2,57 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome, faPhotoVideo, faInfoCircle, faCodeBranch, faAddressBook, faUserSecret } from "@fortawesome/free-solid-svg-icons"; 
+import { Key, ReactChild, ReactFragment, ReactPortal, useEffect, useState } from 'react';
+
+
 
 export default function Intro() {
+
+  const [data, setData] = useState<{
+    open: any; api: string, sensors: any 
+} | null>(null);
+
+  useEffect(() => {
+    fetch('https://spaceapi.hackzogtum-coburg.de/')
+      .then((response) => response.json())
+      .then((data) => {
+        console.log(data);
+        setData(data);
+      })
+      .catch((error) => {
+        console.error('Fehler bei der API-Anfrage:', error);
+      });
+  }, []);
+
+
   return (
     <section className="flex-col md:flex-row flex items-center md:justify-between mt-16 mb-16 md:mb-12 headBorder">
       <a className="hiddenLink" rel="me" href="https://chaos.social/@Hackzogtum">Mastodon</a>
       <h1 className="text-6xl md:text-8xl font-bold tracking-tighter leading-tight md:pr-8">
-        <div className="topLogo">
+      <div className="topLogo">
         <Image
-          src="/images/logo.png"
+          src={data?.open ? '/images/open.gif' : '/images/logo.png'}
           alt="Picture of the author"
           width={280}
           height={150}
         />
-        </div>
+      </div>
       </h1>
+
+      {data && (
+        <div className='m-10 grow'>
+          <p style={{color: "#00ff00"}}>Die Space Tür ist <span style={{ color: data.open ? '#00ff00' : '#ff0000' }}>{data.open ? 'offen' : 'geschlossen'}</span>.</p>
+          <div className='flex flex-row justify-items-start'>
+            <div className='mr-1' style={{color: "#00ff00"}}>Anwesend: </div>
+            {data.sensors["in space"].map((item: boolean | ReactChild | ReactFragment | ReactPortal | null | undefined, index: Key | null | undefined) => (
+              <div className='mr-1' style={{color: "#008000"}} key={index}><h1>{item}{index !== data.sensors["in space"].length - 1 && <span>, </span>}</h1></div>
+            ))}
+          </div>
+
+        </div>
+      )}
+
+
       <h4 className="menuBtns">
         <div className="btnCluster">
           {' '}
