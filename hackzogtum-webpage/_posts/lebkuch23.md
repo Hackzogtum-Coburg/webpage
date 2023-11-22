@@ -8,7 +8,7 @@ ogImage: 'https://hackzogtum-coburg.de/images/lebkuch23.jpeg'
 ![](../images/lebkuch23.jpeg)
 
 Wir werden wieder Lebkuchen backen - diesmal am 02.12.2023 ab 14:00 Uhr. 
-Wer mitbacken möchte darf natürlich sein Werk mitnehmen - nach Abzug einer kleinen Steuer für den Space.
+Wer mitbacken möchte darf natürlich sein Werk mitnehmen - auch wenn wir uns über Spenden zum Verzehr im Space freuen.
 Zutaten und Material werden von uns eingekauft und auf Spendenbasis finanziert.
 Experimente sind gerne gesehen - happy food hacking!
 Teilnehmer sind maximal 10 Menschen mit [Voranmeldung](https://cumulus.hackzogtum-coburg.de/apps/polls/s/JXF2qFBr), damit wir entsprechend einkaufen können. (Einfach mit Ja dem Termin zusagen)
