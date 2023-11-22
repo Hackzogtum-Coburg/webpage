@@ -1,7 +1,7 @@
 ---
 title: "Lebkuchen-Backworkshop 23 - Wir machen wieder die weltbesten Lebkuchen von Welt am 02.12.2023 - ab 14:00 Uhr - Hlg. Kreuzstr. 3 in Coburg"
-date: "2022-11-22"
-coverImage: './images/Lebkuechner_Landauer.jpg'
+date: "2023-11-21"
+coverImage: './images/lebkuch23.jpeg'
 ogImage: 'https://hackzogtum-coburg.de/images/lebkuch23.jpeg'
 ---
 
