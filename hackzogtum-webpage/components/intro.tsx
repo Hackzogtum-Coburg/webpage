@@ -16,7 +16,7 @@ export default function Intro() {
     fetch('https://spaceapi.hackzogtum-coburg.de/')
       .then((response) => response.json())
       .then((data) => {
-        console.log(data);
+//        console.log(data);
         setData(data);
       })
       .catch((error) => {
@@ -31,8 +31,8 @@ export default function Intro() {
       <h1 className="text-6xl md:text-8xl font-bold tracking-tighter leading-tight md:pr-8">
       <div className="topLogo">
         <Image
-          src={data?.open ? '/images/open.gif' : '/images/logo.png'}
-          alt="Picture of the author"
+          src={data != null && data?.open ? '/images/open.gif' : '/images/logo.png'}
+          alt="Logo of hackzogtum"
           width={280}
           height={150}
         />
