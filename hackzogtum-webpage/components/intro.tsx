@@ -29,14 +29,14 @@ export default function Intro() {
     <section className="flex-col md:flex-row flex items-center md:justify-between mt-16 mb-16 md:mb-12 headBorder">
       <a className="hiddenLink" rel="me" href="https://chaos.social/@Hackzogtum">Mastodon</a>
       <h1 className="text-6xl md:text-8xl font-bold tracking-tighter leading-tight md:pr-8">
-      <div className="topLogo">
-        <Image
-          src={data != null && data?.open ? '/images/open.gif' : '/images/logo.png'}
-          alt="Logo of hackzogtum"
-          width={280}
-          height={150}
-        />
-      </div>
+        <div className="topLogo">
+          <Image
+            src={data != null && data?.open ? '/images/open.gif' : '/images/logo.png'}
+            alt="Logo of hackzogtum"
+            width={280}
+            height={150}
+          />
+        </div>
       </h1>
 
       {data && (

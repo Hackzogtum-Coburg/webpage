@@ -50,6 +50,12 @@ a:hover {
 
 .topLogo {
     margin-top: 15px;
+    margin-bottom: 19px;
+}
+
+.topLogo img {
+    width: 280px;
+    height: 150px;
 }
 
 .readMore {
