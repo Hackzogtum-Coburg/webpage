@@ -29,14 +29,14 @@ export default function Intro() {
     <section className="flex-col md:flex-row flex items-center md:justify-between mt-16 mb-16 md:mb-12 headBorder">
       <a className="hiddenLink" rel="me" href="https://chaos.social/@Hackzogtum">Mastodon</a>
       <h1 className="text-6xl md:text-8xl font-bold tracking-tighter leading-tight md:pr-8">
-      <div className="topLogo">
-        <Image
-          src={data != null && data?.open ? '/images/open.gif' : '/images/logo.png'}
-          alt="Logo of hackzogtum"
-          width={280}
-          height={150}
-        />
-      </div>
+        <div className="topLogo">
+          <Image
+            src={data != null && data?.open ? '/images/open.gif' : '/images/logo.png'}
+            alt="Logo of hackzogtum"
+            width={280}
+            height={150}
+          />
+        </div>
       </h1>
 
       {data && (
@@ -56,45 +56,53 @@ export default function Intro() {
       <h4 className="menuBtns">
         <div className="btnCluster">
           {' '}
-          <Link href="/">
-            <a className="underline hover:text-success duration-200 transition-colors"
+          <Link
+            href="/"
+            className="underline hover:text-success duration-200 transition-colors"
             title="Home">
-              <div className="btn-menu">
-              <FontAwesomeIcon icon={faHome}></FontAwesomeIcon>
-              </div>
-            </a>
+
+            <div className="btn-menu">
+            <FontAwesomeIcon icon={faHome}></FontAwesomeIcon>
+            </div>
+
           </Link>
 
           {' '}
-          <Link href="/media">
-            <a className="underline hover:text-success duration-200 transition-colors"
+          <Link
+            href="/media"
+            className="underline hover:text-success duration-200 transition-colors"
             title="Media">
-              <div className="btn-menu">
-              <FontAwesomeIcon icon={faPhotoVideo}></FontAwesomeIcon>
-              </div>
-            </a>
+
+            <div className="btn-menu">
+            <FontAwesomeIcon icon={faPhotoVideo}></FontAwesomeIcon>
+            </div>
+
           </Link>
         </div>
 
         <div className="btnCluster">
           {' '}
-          <Link href="/info">
-            <a className="underline hover:text-success duration-200 transition-colors"
+          <Link
+            href="/info"
+            className="underline hover:text-success duration-200 transition-colors"
             title="Info">
-              <div className="btn-menu">
-              <FontAwesomeIcon icon={faInfoCircle}></FontAwesomeIcon>
-              </div>
-            </a>
+
+            <div className="btn-menu">
+            <FontAwesomeIcon icon={faInfoCircle}></FontAwesomeIcon>
+            </div>
+
           </Link>
 
           {' '}
-          <Link href="/kontakt">
-            <a className="underline hover:text-success duration-200 transition-colors"
+          <Link
+            href="/kontakt"
+            className="underline hover:text-success duration-200 transition-colors"
             title="Kontakt">
-              <div className="btn-menu">
-              <FontAwesomeIcon icon={faAddressBook}></FontAwesomeIcon>
-              </div>
-            </a>
+
+            <div className="btn-menu">
+            <FontAwesomeIcon icon={faAddressBook}></FontAwesomeIcon>
+            </div>
+
           </Link>
         </div>
 
@@ -111,13 +119,15 @@ export default function Intro() {
           </a>
 
           {' '}
-          <Link href="/impressum">
-            <a className="underline hover:text-success duration-200 transition-colors"
+          <Link
+            href="/impressum"
+            className="underline hover:text-success duration-200 transition-colors"
             title="Impressum">
-              <div className="btn-menu">
-              <FontAwesomeIcon icon={faUserSecret}></FontAwesomeIcon>
-              </div>
-            </a>
+
+            <div className="btn-menu">
+            <FontAwesomeIcon icon={faUserSecret}></FontAwesomeIcon>
+            </div>
+
           </Link>
         </div>
       </h4>
