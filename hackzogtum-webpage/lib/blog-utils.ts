@@ -24,7 +24,7 @@ export interface IPost {
 }
 
 
-export default async function markdownToHtml(markdown: VFileCompatible) {
+export default async function markdownToHtml(markdown: any) {
   const result = micromark(markdown, {
     extensions: [gfm()],
     htmlExtensions: [gfmHtml()]
