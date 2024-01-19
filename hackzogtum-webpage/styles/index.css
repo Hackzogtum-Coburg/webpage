@@ -76,3 +76,8 @@ a:hover {
 /* Stop purging. */
 
 /* Your own custom utilities */
+
+
+td, th {
+  padding-left:15px;
+}
