@@ -16,3 +16,18 @@ Am Abend bestellen wir Essen und wir werden eine kleine Tschunk-Bar haben.
 
 Bei Interesse einfach reinkommen, die Tür wird offen sein.
 
+**UPDATE**: Der vorl. Fahrplan steht:
+
+| Time             |Title                                |  Sprache      |
+| :------------    | :------------------------------------|-------------:|
+| 15:00 - 16:00    | Operation Triangulation              | EN            |
+| 16:20 - 17:05    | Die Akte Xandr                       | DE            |
+| 17:25 - 18:15    | Heimlich Manöver                     | DE            |
+| 18:35 - 19:15    | Science-Slam: Impressive             | DE            |
+| 19:15 - 20:00    | / Pause /                            | DE/EN         |
+| 20:00 - 21:00    | toniebox                             | DE            |
+| 21:20 - 22:20    | How to build a submarine and survive | DE            |
+| 22:40 - 23:40    | Breaking "DRM" in Polish trains      | EN            |
+| 00:00 - 02:00    | Fnord-Jahresrückblick-Rückblick      | DE            |
+
+
