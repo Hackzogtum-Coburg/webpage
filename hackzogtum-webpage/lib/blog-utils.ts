@@ -2,7 +2,8 @@ import fs from 'fs'
 import { join } from 'path'
 import matter from 'gray-matter'
 import { GetStaticProps } from 'next';
-import remark from 'remark'
+import {micromark} from 'micromark'
+import {gfm, gfmHtml} from 'micromark-extension-gfm'
 import html from 'remark-html'
 import { VFileCompatible } from 'vfile'
 import { BLOG_SUBTITLE, BLOG_TITLE, BLOG_URL } from './constants';
@@ -24,8 +25,11 @@ export interface IPost {
 
 
 export default async function markdownToHtml(markdown: VFileCompatible) {
-  const result = await remark().use(html).process(markdown)
-  return result.toString()
+  const result = micromark(markdown, {
+    extensions: [gfm()],
+    htmlExtensions: [gfmHtml()]
+  })
+  return result;
 }
 
 
