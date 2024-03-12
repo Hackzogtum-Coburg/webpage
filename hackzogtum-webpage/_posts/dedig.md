@@ -8,6 +8,9 @@ coverImage: './images/cyano.jpg'
 
 
 ### Aus digitalen Bildern schöne analoge Bilder machen.
+
+**Update - Wenn ihr eine UV400 - Schutzbrille besitzt, gerne mitbringen. Ist aber nicht zwingend erforderlich!**
+
 Am 19. März 2024 ab 19:30 Uhr werden wir im Hackzogtum schöne analoge Bilder selber machen. 
 
 Ja, digitale Bilder sind toll.
