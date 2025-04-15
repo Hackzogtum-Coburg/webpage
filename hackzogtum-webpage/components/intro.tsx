@@ -24,13 +24,13 @@ export default function Intro() {
           return new ICAL.Event(e)
         })
         .filter(e => {
-          return Date.parse(e.startDate) > Date.now()
+          return Date.parse(e.startDate.toString()) > Date.now()
         })
         .sort((a,b) => {
           return b.startDate - a.startDate
         })[0]
 
-      setNextEvent(`${nextEvent.summary} am ${new Date(Date.parse(nextEvent.startDate)).toLocaleString("de-DE")} Uhr`);
+      setNextEvent(`${nextEvent.summary} am ${new Date(Date.parse(nextEvent.startDate.toString())).toLocaleString("de-DE")} Uhr`);
     })
     .catch(err => { setNextEvent("error"); console.error('Failed to load calendar:', err)});
   })
