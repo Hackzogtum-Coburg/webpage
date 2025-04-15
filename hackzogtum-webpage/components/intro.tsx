@@ -76,7 +76,7 @@ export default function Intro() {
             ))}
           </div>
           <p style={{color: "#00ff00"}}>Nächstes Event: {nextEvent}</p>
-          <p style={{color: "#00ff00"}}><a href="https://cumulus.hackzogtum-coburg.de/apps/calendar/p/YdJDi9ik8jRABobq" target="_blank">Eventkalender</a></p>
+          <p style={{color: "#00ff00"}}><a href="https://cumulus.hackzogtum-coburg.de/apps/calendar/p/YdJDi9ik8jRABobq">Eventkalender</a></p>
 
         </div>
       )}
