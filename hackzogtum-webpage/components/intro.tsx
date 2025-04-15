@@ -27,7 +27,7 @@ export default function Intro() {
           return Date.parse(e.startDate.toString()) > Date.now()
         })
         .sort((a,b) => {
-          return b.startDate - a.startDate
+          return Date.parse(b.startDate.toString()) - Date.parse(a.startDate.toString())
         })[0]
 
       setNextEvent(`${nextEvent.summary} am ${new Date(Date.parse(nextEvent.startDate.toString())).toLocaleString("de-DE")} Uhr`);
