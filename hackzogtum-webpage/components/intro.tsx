@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import ICAL from "ical.js"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome, faPhotoVideo, faInfoCircle, faCodeBranch, faAddressBook, faUserSecret } from "@fortawesome/free-solid-svg-icons"; 
 import { Key, ReactChild, ReactFragment, ReactPortal, useEffect, useState } from 'react';
@@ -8,8 +9,34 @@ import { Key, ReactChild, ReactFragment, ReactPortal, useEffect, useState } from
 
 export default function Intro() {
 
+  const [nextEvent, setNextEvent] = useState<string | null>(null);
+  useEffect(() => {
+    fetch('https://cumulus.hackzogtum-coburg.de/remote.php/dav/public-calendars/YdJDi9ik8jRABobq/?export')
+    .then(response => response.text())
+    .then(icsData => {
+      // Use ical.js or a parser to read .ics
+      const jcalData = ICAL.parse(icsData);
+      const comp = new ICAL.Component(jcalData);
+      const events = comp.getAllSubcomponents("vevent");
+
+      var nextEvent = events
+        .map(e => {
+          return new ICAL.Event(e)
+        })
+        .filter(e => {
+          return Date.parse(e.startDate) > Date.now()
+        })
+        .sort((a,b) => {
+          return b.startDate - a.startDate
+        })[0]
+
+      setNextEvent(`${nextEvent.summary} am ${new Date(Date.parse(nextEvent.startDate)).toLocaleString("de-DE")} Uhr`);
+    })
+    .catch(err => { setNextEvent("error"); console.error('Failed to load calendar:', err)});
+  })
+
   const [data, setData] = useState<{
-    open: any; api: string, sensors: any 
+    open: any; api: string, sensors: any, next_open: string
 } | null>(null);
 
   useEffect(() => {
@@ -48,7 +75,8 @@ export default function Intro() {
               <div className='mr-1' style={{color: "#008000"}} key={index}><h1>{item}{index !== data.sensors["in space"].length - 1 && <span>, </span>}</h1></div>
             ))}
           </div>
-          <p style={{color: "#00ff00"}}><a href="https://cumulus.hackzogtum-coburg.de/apps/calendar/p/YdJDi9ik8jRABobq">Eventkalender</a></p>
+          <p style={{color: "#00ff00"}}>Nächstes Event: {nextEvent}</p>
+          <p style={{color: "#00ff00"}}><a href="https://cumulus.hackzogtum-coburg.de/apps/calendar/p/YdJDi9ik8jRABobq" target="_blank">Eventkalender</a></p>
 
         </div>
       )}
