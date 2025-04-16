@@ -65,7 +65,7 @@ export default function Intro() {
       });
     })
     .catch(err => { setNextEvent(null); console.error('Failed to load calendar:', err)});
-  })
+  }, [])
 
   const [data, setData] = useState<{
     open: any; api: string, sensors: any, next_open: string
