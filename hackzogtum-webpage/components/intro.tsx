@@ -17,7 +17,7 @@ export default function Intro() {
     let next = expand.next();
 
 
-    while(Date.parse(next) < Date.now()){
+    while(Date.parse(next.toString()) < Date.now()){
       next = expand.next()
     }
     return {
