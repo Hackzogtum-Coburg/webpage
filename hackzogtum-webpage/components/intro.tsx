@@ -9,7 +9,12 @@ import { Key, ReactChild, ReactFragment, ReactPortal, useEffect, useState } from
 
 export default function Intro() {
 
-  function getFirstFutureReoccurance(vevent: any){
+  interface ResultDate  {
+      summary: string;
+      startDate: string;
+  }
+
+  function getFirstFutureReoccurance(vevent: any) : ResultDate{
     let expand = new ICAL.RecurExpansion({
       component: vevent,
       dtstart: vevent.getFirstPropertyValue('dtstart')
@@ -22,9 +27,10 @@ export default function Intro() {
     }
     return {
       summary: vevent.getFirstPropertyValue('summary'),
-      startDate: next 
+      startDate: next.toString() 
     };
   }
+
 
   const [nextEvent, setNextEvent] = useState<{summary: string, startDate: string}| null>(null);
   useEffect(() => {
@@ -37,20 +43,20 @@ export default function Intro() {
       const events = comp.getAllSubcomponents("vevent");
 
       var nextEvent = events
-        .map(e => {
+        .map((e : any)=> {
           if(e.getFirstProperty('rrule')){
             return getFirstFutureReoccurance(e)
           }
           return {
             summary: e.getFirstPropertyValue('summary'),
-            startDate: e.getFirstPropertyValue('dtstart')
+            startDate: e.getFirstPropertyValue('dtstart').toString()
           };
         })
-        .filter(e => {
-          return Date.parse(e.startDate.toString()) > Date.now()
+        .filter((e: ResultDate) => {
+          return Date.parse(e.startDate) > Date.now()
         })
-        .sort((a,b) => {
-          return Date.parse(a.startDate.toString()) - Date.parse(b.startDate.toString())
+        .sort((a : ResultDate,b : ResultDate) => {
+          return Date.parse(a.startDate) - Date.parse(b.startDate)
         })[0]
 
       setNextEvent({
@@ -58,7 +64,7 @@ export default function Intro() {
         startDate: new Date(Date.parse(nextEvent.startDate.toString())).toLocaleString("de-DE")
       });
     })
-    .catch(err => { setNextEvent("error"); console.error('Failed to load calendar:', err)});
+    .catch(err => { setNextEvent(null); console.error('Failed to load calendar:', err)});
   })
 
   const [data, setData] = useState<{
@@ -101,7 +107,10 @@ export default function Intro() {
               <div className='mr-1' style={{color: "#008000"}} key={index}><h1>{item}{index !== data.sensors["in space"].length - 1 && <span>, </span>}</h1></div>
             ))}
           </div>
-          <p style={{color: "#00ff00"}}>Nächstes Event: <span style={{fontWeight: 'bold'}}>`&lsquo;`{nextEvent.summary}`&rsquo;`</span> am {nextEvent.startDate} Uhr</p>
+          {nextEvent && (
+            <p style={{color: "#00ff00"}}>Nächstes Event: <span style={{fontWeight: 'bold'}}>`&lsquo;`{nextEvent.summary}`&rsquo;`</span> am {nextEvent.startDate} Uhr</p>
+          )
+          }
           <p style={{color: "#00ff00"}}><a href="https://cumulus.hackzogtum-coburg.de/apps/calendar/p/YdJDi9ik8jRABobq">Eventkalender</a></p>
 
         </div>
