@@ -9,7 +9,7 @@ import { Key, ReactChild, ReactFragment, ReactPortal, useEffect, useState } from
 
 export default function Intro() {
 
-  function getFirstFutureReoccurance(vevent){
+  function getFirstFutureReoccurance(vevent: Any){
     let expand = new ICAL.RecurExpansion({
       component: vevent,
       dtstart: vevent.getFirstPropertyValue('dtstart')
