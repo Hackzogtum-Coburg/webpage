@@ -155,7 +155,7 @@ export default function Intro() {
             href="/info"
             className="underline hover:text-success duration-200 transition-colors"
             title="Info">
-            <div class="pl-2 pr-2">Wer&nbsp;sind&nbsp;wir</div>
+            <div className="pl-2 pr-2">Wer&nbsp;sind&nbsp;wir</div>
           </Link>
 
           <Link
@@ -163,14 +163,14 @@ export default function Intro() {
             className="underline hover:text-success duration-200 transition-colors"
             title="Kontakt">
 
-            <div class="pl-2 pr-2">Kontakt</div>
+            <div className="pl-2 pr-2">Kontakt</div>
 
           </Link>
           <Link
             href="/impressum"
             className="underline hover:text-success duration-200 transition-colors"
             title="Impressum">
-            <div class="pl-2 pr-2">Impressum</div>
+            <div className="pl-2 pr-2">Impressum</div>
 
 
           </Link>
