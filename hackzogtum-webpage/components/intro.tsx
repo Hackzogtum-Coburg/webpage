@@ -101,7 +101,7 @@ export default function Intro() {
               <div className='mr-1' style={{color: "#008000"}} key={index}><h1>{item}{index !== data.sensors["in space"].length - 1 && <span>, </span>}</h1></div>
             ))}
           </div>
-          <p style={{color: "#00ff00"}}>Nächstes Event: <span style={{fontWeight: 'bold'}}>'{nextEvent.summary}'</span> am {nextEvent.startDate} Uhr</p>
+          <p style={{color: "#00ff00"}}>Nächstes Event: <span style={{fontWeight: 'bold'}}>`&lsquo;`{nextEvent.summary}`&rsquo;`</span> am {nextEvent.startDate} Uhr</p>
           <p style={{color: "#00ff00"}}><a href="https://cumulus.hackzogtum-coburg.de/apps/calendar/p/YdJDi9ik8jRABobq">Eventkalender</a></p>
 
         </div>
