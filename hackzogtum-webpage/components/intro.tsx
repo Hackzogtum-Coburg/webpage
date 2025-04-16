@@ -9,7 +9,24 @@ import { Key, ReactChild, ReactFragment, ReactPortal, useEffect, useState } from
 
 export default function Intro() {
 
-  const [nextEvent, setNextEvent] = useState<string | null>(null);
+  function getFirstFutureReoccurance(vevent){
+    let expand = new ICAL.RecurExpansion({
+      component: vevent,
+      dtstart: vevent.getFirstPropertyValue('dtstart')
+    });
+    let next = expand.next();
+
+
+    while(Date.parse(next) < Date.now()){
+      next = expand.next()
+    }
+    return {
+      summary: vevent.getFirstPropertyValue('summary'),
+      startDate: next 
+    };
+  }
+
+  const [nextEvent, setNextEvent] = useState<{summary: string, startDate: string}| null>(null);
   useEffect(() => {
     fetch('https://cumulus.hackzogtum-coburg.de/remote.php/dav/public-calendars/YdJDi9ik8jRABobq/?export')
     .then(response => response.text())
@@ -21,16 +38,25 @@ export default function Intro() {
 
       var nextEvent = events
         .map(e => {
-          return new ICAL.Event(e)
+          if(e.getFirstProperty('rrule')){
+            return getFirstFutureReoccurance(e)
+          }
+          return {
+            summary: e.getFirstPropertyValue('summary'),
+            startDate: e.getFirstPropertyValue('dtstart')
+          };
         })
         .filter(e => {
           return Date.parse(e.startDate.toString()) > Date.now()
         })
         .sort((a,b) => {
-          return Date.parse(b.startDate.toString()) - Date.parse(a.startDate.toString())
+          return Date.parse(a.startDate.toString()) - Date.parse(b.startDate.toString())
         })[0]
 
-      setNextEvent(`${nextEvent.summary} am ${new Date(Date.parse(nextEvent.startDate.toString())).toLocaleString("de-DE")} Uhr`);
+      setNextEvent({
+        summary: nextEvent.summary,
+        startDate: new Date(Date.parse(nextEvent.startDate.toString())).toLocaleString("de-DE")
+      });
     })
     .catch(err => { setNextEvent("error"); console.error('Failed to load calendar:', err)});
   })
@@ -75,7 +101,7 @@ export default function Intro() {
               <div className='mr-1' style={{color: "#008000"}} key={index}><h1>{item}{index !== data.sensors["in space"].length - 1 && <span>, </span>}</h1></div>
             ))}
           </div>
-          <p style={{color: "#00ff00"}}>Nächstes Event: {nextEvent}</p>
+          <p style={{color: "#00ff00"}}>Nächstes Event: <span style={{fontWeight: 'bold'}}>'{nextEvent.summary}'</span> am {nextEvent.startDate} Uhr</p>
           <p style={{color: "#00ff00"}}><a href="https://cumulus.hackzogtum-coburg.de/apps/calendar/p/YdJDi9ik8jRABobq">Eventkalender</a></p>
 
         </div>
