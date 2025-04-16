@@ -89,12 +89,19 @@ export default function Intro() {
       <a className="hiddenLink" rel="me" href="https://chaos.social/@Hackzogtum">Mastodon</a>
       <h1 className="text-6xl md:text-8xl font-bold tracking-tighter leading-tight md:pr-8">
         <div className="topLogo">
-          <Image
-            src={data != null && data?.open ? '/images/open.gif' : '/images/logo.png'}
-            alt="Logo of hackzogtum"
-            width={280}
-            height={150}
-          />
+          <Link
+            href="/"
+            className="underline hover:text-success duration-200 transition-colors"
+            title="Home">
+
+
+            <Image
+              src={data != null && data?.open ? '/images/open.gif' : '/images/logo.png'}
+              alt="Logo of hackzogtum"
+              width={280}
+              height={150}
+            />
+          </Link>
         </div>
       </h1>
 
@@ -117,9 +124,8 @@ export default function Intro() {
       )}
 
 
-      <h4 className="menuBtns">
+          { /*
         <div className="btnCluster">
-          {' '}
           <Link
             href="/"
             className="underline hover:text-success duration-200 transition-colors"
@@ -131,7 +137,6 @@ export default function Intro() {
 
           </Link>
 
-          {' '}
           <Link
             href="/media"
             className="underline hover:text-success duration-200 transition-colors"
@@ -143,58 +148,35 @@ export default function Intro() {
 
           </Link>
         </div>
+          */ }
 
-        <div className="btnCluster">
-          {' '}
+        <div className="flex flex-row md:flex-col">
           <Link
             href="/info"
             className="underline hover:text-success duration-200 transition-colors"
             title="Info">
-
-            <div className="btn-menu">
-            <FontAwesomeIcon icon={faInfoCircle}></FontAwesomeIcon>
-            </div>
-
+            <div class="pl-2 pr-2">Wer&nbsp;sind&nbsp;wir</div>
           </Link>
 
-          {' '}
           <Link
             href="/kontakt"
             className="underline hover:text-success duration-200 transition-colors"
             title="Kontakt">
 
-            <div className="btn-menu">
-            <FontAwesomeIcon icon={faAddressBook}></FontAwesomeIcon>
-            </div>
+            <div class="pl-2 pr-2">Kontakt</div>
 
           </Link>
-        </div>
-
-        <div className="btnCluster">
-          {' '}
-          <a href="https://github.com/Hackzogtum-Coburg" 
-          className="underline hover:text-success duration-200 transition-colors" 
-          target="_blank" 
-          title="Github Profile"
-          rel="noreferrer">
-            <div className="btn-menu">
-            <FontAwesomeIcon icon={faCodeBranch}></FontAwesomeIcon>
-            </div>
-          </a>
-
-          {' '}
           <Link
             href="/impressum"
             className="underline hover:text-success duration-200 transition-colors"
             title="Impressum">
+            <div class="pl-2 pr-2">Impressum</div>
 
-            <div className="btn-menu">
-            <FontAwesomeIcon icon={faUserSecret}></FontAwesomeIcon>
-            </div>
 
           </Link>
         </div>
-      </h4>
+
     </section>
+
   )
 }
