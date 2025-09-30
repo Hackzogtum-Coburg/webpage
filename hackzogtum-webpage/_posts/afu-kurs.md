@@ -1,8 +1,6 @@
 ---
 title: "Einsteigerkurs Amateurfunk"
 date: "2025-09-30"
-coverImage: './images/lebkuch23.jpeg'
-ogImage: 'https://hackzogtum-coburg.de/images/lebkuch23.jpeg'
 ---
 
 Es wird hochfrequenzlastig im Hackzogtum: Wir bieten einen Einsteigerkurs zur Erlangung der Zulassung zum Amateurfunkdienst Klasse N. Klingt komplizierter als es ist ;-)
