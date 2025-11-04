@@ -5,7 +5,7 @@ date: "2025-11-04"
 coverImage: './images/typst.png'
 ---
 
-![](../images/typst.png)
+![](https://hackzogtum-coburg.de/images/typst.png)
 
 Ob Brief, Poster oder wissenschaftliche Publikation: Word und andere Textprozessoren sind zeitraubend, wenn präzise Standards und komplexe Layouts gefordert sind.
 Hier kommen Typensetzsysteme wie Typst ins Spiel.
