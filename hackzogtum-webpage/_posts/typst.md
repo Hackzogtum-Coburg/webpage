@@ -1,6 +1,6 @@
 ---
 
-title: "Einführung in Typst, Dienstag 11.11.2025 ab 14:00 - Stoppen Sie den Kampf mit der Formatierung!"
+title: "Einführung in Typst, Dienstag 11.11.2025 ab 20:00 - Stoppen Sie den Kampf mit der Formatierung!"
 date: "2025-11-04"
 coverImage: './images/typst.png'
 ---
