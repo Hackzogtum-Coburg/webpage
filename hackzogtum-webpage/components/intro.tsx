@@ -123,7 +123,7 @@ export default function Intro() {
                 <FontAwesomeIcon icon={faPhone} title="Telefon" />
               </span>
 
-              Call our canphone: +49221596192432
+              Call our canphone: +49 221 596 192 432
             </a>
           </p>
           <div className='flex flex-row justify-items-start'>
