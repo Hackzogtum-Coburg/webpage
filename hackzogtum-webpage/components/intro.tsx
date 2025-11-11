@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import ICAL from "ical.js"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHome, faPhotoVideo, faInfoCircle, faCodeBranch, faAddressBook, faUserSecret } from "@fortawesome/free-solid-svg-icons"; 
+import { faHome, faPhotoVideo, faInfoCircle, faCodeBranch, faAddressBook, faUserSecret, faPhone, faDoorOpen, faPerson, faCalendar, faUsd, faUser } from "@fortawesome/free-solid-svg-icons"; 
 import { Key, ReactChild, ReactFragment, ReactPortal, useEffect, useState } from 'react';
 
 
@@ -106,21 +106,49 @@ export default function Intro() {
       </h1>
 
       {data && (
+        
         <div className='m-10 grow'>
-          <p style={{color: "#00ff00"}}>Die Space Tür ist <span style={{ color: data.open ? '#00ff00' : '#ff0000' }}>{data.open ? 'offen' : 'geschlossen'}</span>.</p>
+          
+          <p style={{color: "#00ff00"}}> <span style={{ marginRight: '8px' }}>
+                <FontAwesomeIcon icon={faDoorOpen} title="Door" />
+              </span>
+              
+           Die Space Tür ist <span style={{ color: data.open ? '#00ff00' : '#ff0000' }}>{data.open ? 'offen' : 'geschlossen'}</span>.</p>
+          <p style={{visibility: data.open ? 'visible' : 'hidden'}} >
+            <a
+              style={{ color: "#00ff00", textDecoration: "none" }}
+              href="tel:+49221596192432"
+            >
+              <span style={{ marginRight: '8px' }}>
+                <FontAwesomeIcon icon={faPhone} title="Telefon" />
+              </span>
+
+              Call our canphone: +49221596192432
+            </a>
+          </p>
           <div className='flex flex-row justify-items-start'>
-            <div className='mr-1' style={{color: "#00ff00"}}>Anwesend: </div>
+            <div className='mr-1' style={{color: "#00ff00"}}><span style={{ marginRight: '8px' }}>
+                <FontAwesomeIcon icon={faUser} title="Person" />
+              </span>
+              
+                Anwesend: </div>
             {data.sensors["in space"].map((item: boolean | ReactChild | ReactFragment | ReactPortal | null | undefined, index: Key | null | undefined) => (
               <div className='mr-1' style={{color: "#008000"}} key={index}><h1>{item}{index !== data.sensors["in space"].length - 1 && <span>, </span>}</h1></div>
             ))}
           </div>
           {nextEvent && (
-            <p style={{color: "#00ff00"}}>Nächstes Event: <span style={{fontWeight: 'bold'}}>{nextEvent.summary}</span> am {nextEvent.startDate} Uhr</p>
+            <p style={{color: "#00ff00"}}><span style={{ marginRight: '8px' }}>
+                <FontAwesomeIcon icon={faCalendar} title="Calendar" />
+              </span>
+              
+              Nächstes Event: <span style={{fontWeight: 'bold'}}>{nextEvent.summary}</span> am {nextEvent.startDate} Uhr</p>
           )
           }
           <p style={{color: "#00ff00"}}><a href="https://cumulus.hackzogtum-coburg.de/apps/calendar/p/YdJDi9ik8jRABobq">Eventkalender</a></p>
 
         </div>
+        
+
       )}
 
 
