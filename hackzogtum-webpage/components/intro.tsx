@@ -12,22 +12,31 @@ export default function Intro() {
   interface ResultDate  {
       summary: string;
       startDate: string;
+      endDate: string;
   }
 
   function getFirstFutureReoccurance(vevent: any) : ResultDate{
-    let expand = new ICAL.RecurExpansion({
+    let startDates = new ICAL.RecurExpansion({
       component: vevent,
       dtstart: vevent.getFirstPropertyValue('dtstart')
     });
-    let next = expand.next();
+    let nextStartDate = startDates.next();
+
+    let endDates = new ICAL.RecurExpansion({
+      component: vevent,
+      dtstart: vevent.getFirstPropertyValue('dtend')
+    });
+    let nextEndDate = endDates.next();
 
 
-    while(Date.parse(next.toString()) < Date.now()){
-      next = expand.next()
+    while(Date.parse(nextEndDate.toString()) < Date.now()){
+      nextStartDate = startDates.next()
+      nextEndDate = endDates.next()
     }
     return {
       summary: vevent.getFirstPropertyValue('summary'),
-      startDate: next.toString() 
+      startDate: nextStartDate.toString(),
+      endDate: nextEndDate.toString() 
     };
   }
 
@@ -49,11 +58,12 @@ export default function Intro() {
           }
           return {
             summary: e.getFirstPropertyValue('summary'),
-            startDate: e.getFirstPropertyValue('dtstart').toString()
+            startDate: e.getFirstPropertyValue('dtstart').toString(),
+            endDate: e.getFirstPropertyValue('dtend').toString()
           };
         })
         .filter((e: ResultDate) => {
-          return Date.parse(e.startDate) > Date.now()
+          return Date.parse(e.endDate) > Date.now()
         })
         .sort((a : ResultDate,b : ResultDate) => {
           return Date.parse(a.startDate) - Date.parse(b.startDate)
