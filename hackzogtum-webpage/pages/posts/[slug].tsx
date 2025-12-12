@@ -1,13 +1,15 @@
 import { useRouter } from 'next/router'
+import Link from 'next/link'
 import Container from '../../components/container'
 import PostBody from '../../components/post-body'
-import Header from '../../components/header'
 import PostHeader from '../../components/post-header'
 import Layout from '../../components/layout'
 import { getPostBySlug, getAllPosts, IPost } from '../../lib/blog-utils'
 import PostTitle from '../../components/post-title'
 import Head from 'next/head'
 import { GetStaticPaths, GetStaticProps } from 'next'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faArrowLeft } from "@fortawesome/free-solid-svg-icons"
 
 interface PostProps {
   post: IPost,
@@ -19,7 +21,15 @@ export default function Post({ post }: PostProps) {
   return (
     <Layout>
       <Container>
-        <Header />
+        <Link href="/" 
+              className="inline-flex items-center gap-2 mb-8 mt-8 text-lg hover:text-primary transition-colors"
+              style={{ 
+                color: 'var(--color-text-secondary)',
+                textDecoration: 'none'
+              }}>
+          <FontAwesomeIcon icon={faArrowLeft} className="text-primary" />
+          <span>Zurück zur Übersicht</span>
+        </Link>
         {router.isFallback ? (
           <PostTitle>Loading…</PostTitle>
         ) : (

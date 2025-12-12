@@ -9,7 +9,7 @@ import { Key, ReactChild, ReactFragment, ReactPortal, useEffect, useState } from
 
 export default function Intro() {
   // Debug-Modus: Setze auf true um Mock-Daten zu verwenden
-  const DEBUG_MODE = true;
+  const DEBUG_MODE = false;
 
   // Mock-Daten für Testing
   const MOCK_DATA = {
@@ -98,7 +98,7 @@ export default function Intro() {
       });
     })
     .catch(err => { setNextEvent(null); console.error('Failed to load calendar:', err)});
-  }, [])
+  }, []);
 
   const [data, setData] = useState<{
     open: any; api: string, sensors: any, next_open: string
@@ -154,20 +154,6 @@ export default function Intro() {
                 </span>
               </div>
 
-<<<<<<< HEAD
-              Call our canphone: +49 221 596 192 432
-            </a>
-          </p>
-          <div className='flex flex-row justify-items-start'>
-            <div className='mr-1' style={{color: "#00ff00"}}><span style={{ marginRight: '8px' }}>
-                <FontAwesomeIcon icon={faUser} title="Person" />
-              </span>
-              
-                Anwesend: </div>
-            {data.sensors["in space"].map((item: boolean | ReactChild | ReactFragment | ReactPortal | null | undefined, index: Key | null | undefined) => (
-              <div className='mr-1' style={{color: "#008000"}} key={index}><h1>{item}{index !== data.sensors["in space"].length - 1 && <span>, </span>}</h1></div>
-            ))}
-=======
               {data.open && (
                 <div className="status-item">
                   <FontAwesomeIcon icon={faPhone} className="status-icon" />
@@ -208,7 +194,6 @@ export default function Intro() {
                 → Eventkalender
               </a>
             </div>
->>>>>>> a600e7a (major change in css)
           </div>
         )}
 
