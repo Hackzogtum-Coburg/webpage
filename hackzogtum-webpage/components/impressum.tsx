@@ -1,6 +1,6 @@
 export default function Impressum() {
   return (
-    <div>
+    <div className="content-box">
         <h3>Impressum</h3>     
         <div>
         <br />

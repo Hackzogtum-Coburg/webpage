@@ -3,9 +3,9 @@ import Link from 'next/link'
 
 export default function Contact() {
     return (
-      <div>
+      <div className="content-box">
             <h3>Kontakt</h3>     
-            <div className="entry-content">
+            <div>
                 <p>Wir freuen uns sehr über Dein Interesse! Bei <Link href="/info">Fragen</Link> sind wir auf folgende Arten zu erreichen:<br />
                 <br />
                 <strong>1. Trage dich in unsere <a title="Mailingliste" href="https://lists.electrologic.org/postorius/lists/talk.chaostreff-coburg.de/">Mailingliste</a> ein.</strong><br />

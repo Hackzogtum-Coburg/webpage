@@ -8,6 +8,23 @@ import { Key, ReactChild, ReactFragment, ReactPortal, useEffect, useState } from
 
 
 export default function Intro() {
+  // Debug-Modus: Setze auf true um Mock-Daten zu verwenden
+  const DEBUG_MODE = true;
+
+  // Mock-Daten für Testing
+  const MOCK_DATA = {
+    open: true,
+    api: "0.13",
+    sensors: {
+      "in space": ["Alice", "Bob", "Charlie"]
+    },
+    next_open: ""
+  };
+
+  const MOCK_EVENT = {
+    summary: "Test Hackathon",
+    startDate: "15.12.2025, 19:00:00"
+  };
 
   interface ResultDate  {
       summary: string;
@@ -43,6 +60,12 @@ export default function Intro() {
 
   const [nextEvent, setNextEvent] = useState<{summary: string, startDate: string}| null>(null);
   useEffect(() => {
+    if (DEBUG_MODE) {
+      console.log('🔧 DEBUG MODE: Using mock event data');
+      setNextEvent(MOCK_EVENT);
+      return;
+    }
+
     fetch('https://cumulus.hackzogtum-coburg.de/remote.php/dav/public-calendars/YdJDi9ik8jRABobq/?export')
     .then(response => response.text())
     .then(icsData => {
@@ -82,6 +105,12 @@ export default function Intro() {
 } | null>(null);
 
   useEffect(() => {
+    if (DEBUG_MODE) {
+      console.log('🔧 DEBUG MODE: Using mock space data');
+      setData(MOCK_DATA);
+      return;
+    }
+
     fetch('https://spaceapi.hackzogtum-coburg.de/')
       .then((response) => response.json())
       .then((data) => {
@@ -95,44 +124,37 @@ export default function Intro() {
 
 
   return (
-    <section className="flex-col md:flex-row flex items-center md:justify-between mt-16 mb-16 md:mb-12 headBorder">
+    <section className="header-section">
       <a className="hiddenLink" rel="me" href="https://chaos.social/@Hackzogtum">Mastodon</a>
-      <h1 className="text-6xl md:text-8xl font-bold tracking-tighter leading-tight md:pr-8">
-        <div className="topLogo">
-          <Link
-            href="/"
-            className="underline hover:text-success duration-200 transition-colors"
-            title="Home">
-
-
+      
+      <div className="header-container">
+        {/* Logo Section */}
+        <div className="header-logo">
+          <Link href="/" title="Home" className="logo-link">
             <Image
               src={data != null && data?.open ? '/images/open.gif' : '/images/logo.png'}
               alt="Logo of hackzogtum"
               width={280}
               height={150}
+              priority
             />
           </Link>
         </div>
-      </h1>
 
-      {data && (
-        
-        <div className='m-10 grow'>
-          
-          <p style={{color: "#00ff00"}}> <span style={{ marginRight: '8px' }}>
-                <FontAwesomeIcon icon={faDoorOpen} title="Door" />
-              </span>
-              
-           Die Space Tür ist <span style={{ color: data.open ? '#00ff00' : '#ff0000' }}>{data.open ? 'offen' : 'geschlossen'}</span>.</p>
-          <p style={{visibility: data.open ? 'visible' : 'hidden'}} >
-            <a
-              style={{ color: "#00ff00", textDecoration: "none" }}
-              href="tel:+49221596192432"
-            >
-              <span style={{ marginRight: '8px' }}>
-                <FontAwesomeIcon icon={faPhone} title="Telefon" />
-              </span>
+        {/* Status & Info Section */}
+        {data && (
+          <div className='header-info'>
+            {/* Space Status */}
+            <div className="status-card">
+              <div className="status-item">
+                <FontAwesomeIcon icon={faDoorOpen} className="status-icon" />
+                <span>Die Space Tür ist </span>
+                <span className={`status-badge ${data.open ? 'status-open' : 'status-closed'}`}>
+                  {data.open ? 'offen' : 'geschlossen'}
+                </span>
+              </div>
 
+<<<<<<< HEAD
               Call our canphone: +49 221 596 192 432
             </a>
           </p>
@@ -145,75 +167,65 @@ export default function Intro() {
             {data.sensors["in space"].map((item: boolean | ReactChild | ReactFragment | ReactPortal | null | undefined, index: Key | null | undefined) => (
               <div className='mr-1' style={{color: "#008000"}} key={index}><h1>{item}{index !== data.sensors["in space"].length - 1 && <span>, </span>}</h1></div>
             ))}
+=======
+              {data.open && (
+                <div className="status-item">
+                  <FontAwesomeIcon icon={faPhone} className="status-icon" />
+                  <span>Call our canphone: </span>
+                  <a href="tel:+49221596192432" className="phone-link">
+                    +49221596192432
+                  </a>
+                </div>
+              )}
+
+              {/* People Present */}
+              {data.open && (
+                <div className="status-item">
+                  <FontAwesomeIcon icon={faUser} className="status-icon" />
+                  <span>Anwesend: </span>
+                  <div className="inline-flex flex-wrap gap-1">
+                    {data.sensors["in space"].map((item: boolean | ReactChild | ReactFragment | ReactPortal | null | undefined, index: Key | null | undefined) => (
+                      <span className="person-badge" key={index}>
+                        {item}{index !== data.sensors["in space"].length - 1 && ','}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {/* Next Event */}
+              {nextEvent && (
+                <div className="status-item">
+                  <FontAwesomeIcon icon={faCalendar} className="status-icon" />
+                  <span>Nächstes Event: </span>
+                  <span className="event-title">{nextEvent.summary}</span>
+                  <span className="event-date"> am {nextEvent.startDate} Uhr</span>
+                </div>
+              )}
+
+              <a href="https://cumulus.hackzogtum-coburg.de/apps/calendar/p/YdJDi9ik8jRABobq" 
+                 className="calendar-link">
+                → Eventkalender
+              </a>
+            </div>
+>>>>>>> a600e7a (major change in css)
           </div>
-          {nextEvent && (
-            <p style={{color: "#00ff00"}}><span style={{ marginRight: '8px' }}>
-                <FontAwesomeIcon icon={faCalendar} title="Calendar" />
-              </span>
-              
-              Nächstes Event: <span style={{fontWeight: 'bold'}}>{nextEvent.summary}</span> am {nextEvent.startDate} Uhr</p>
-          )
-          }
-          <p style={{color: "#00ff00"}}><a href="https://cumulus.hackzogtum-coburg.de/apps/calendar/p/YdJDi9ik8jRABobq">Eventkalender</a></p>
-
-        </div>
-        
-
-      )}
+        )}
 
 
-          { /*
-        <div className="btnCluster">
-          <Link
-            href="/"
-            className="underline hover:text-success duration-200 transition-colors"
-            title="Home">
-
-            <div className="btn-menu">
-            <FontAwesomeIcon icon={faHome}></FontAwesomeIcon>
-            </div>
-
+        {/* Navigation */}
+        <nav className="header-nav">
+          <Link href="/info" className="nav-link" title="Info">
+            Wer sind wir
           </Link>
-
-          <Link
-            href="/media"
-            className="underline hover:text-success duration-200 transition-colors"
-            title="Media">
-
-            <div className="btn-menu">
-            <FontAwesomeIcon icon={faPhotoVideo}></FontAwesomeIcon>
-            </div>
-
+          <Link href="/kontakt" className="nav-link" title="Kontakt">
+            Kontakt
           </Link>
-        </div>
-          */ }
-
-        <div className="flex flex-row md:flex-col">
-          <Link
-            href="/info"
-            className="underline hover:text-success duration-200 transition-colors"
-            title="Info">
-            <div className="pl-2 pr-2">Wer&nbsp;sind&nbsp;wir</div>
+          <Link href="/impressum" className="nav-link" title="Impressum">
+            Impressum
           </Link>
-
-          <Link
-            href="/kontakt"
-            className="underline hover:text-success duration-200 transition-colors"
-            title="Kontakt">
-
-            <div className="pl-2 pr-2">Kontakt</div>
-
-          </Link>
-          <Link
-            href="/impressum"
-            className="underline hover:text-success duration-200 transition-colors"
-            title="Impressum">
-            <div className="pl-2 pr-2">Impressum</div>
-
-
-          </Link>
-        </div>
-
+        </nav>
+      </div>
     </section>
 
   )

@@ -1,5 +1,6 @@
 .markdown {
   @apply text-lg leading-relaxed;
+  color: var(--color-text-primary);
 }
 
 .markdown p,
@@ -9,10 +10,131 @@
   @apply my-6;
 }
 
+.markdown p {
+  @apply leading-7;
+}
+
+.markdown h1 {
+  @apply text-4xl md:text-5xl font-bold mt-16 mb-6 leading-tight;
+  color: var(--color-primary);
+  text-shadow: 0 0 20px rgba(0, 255, 0, 0.2);
+}
+
 .markdown h2 {
-  @apply text-3xl mt-12 mb-4 leading-snug;
+  @apply text-3xl md:text-4xl font-bold mt-12 mb-4 leading-snug;
+  color: var(--color-primary-light);
+  border-bottom: 2px solid var(--color-border);
+  padding-bottom: 0.5rem;
 }
 
 .markdown h3 {
-  @apply text-2xl mt-8 mb-4 leading-snug;
+  @apply text-2xl md:text-3xl font-semibold mt-8 mb-4 leading-snug;
+  color: var(--color-text-primary);
+}
+
+.markdown h4 {
+  @apply text-xl md:text-2xl font-semibold mt-6 mb-3;
+}
+
+.markdown ul,
+.markdown ol {
+  @apply ml-6 space-y-2;
+}
+
+.markdown ul {
+  @apply list-disc;
+}
+
+.markdown ol {
+  @apply list-decimal;
+}
+
+.markdown li {
+  @apply leading-7;
+}
+
+.markdown li::marker {
+  color: var(--color-primary);
+}
+
+.markdown blockquote {
+  @apply border-l-4 pl-4 italic my-8;
+  border-color: var(--color-primary);
+  background-color: rgba(0, 255, 0, 0.05);
+  padding: 1rem;
+  border-radius: 0 4px 4px 0;
+}
+
+.markdown code {
+  @apply px-2 py-1 rounded text-sm;
+  background-color: rgba(0, 255, 0, 0.1);
+  color: var(--color-primary-light);
+  font-family: 'Monaco', 'Courier New', monospace;
+}
+
+.markdown pre {
+  @apply p-4 rounded-lg my-6 overflow-x-auto;
+  background-color: var(--color-bg-medium);
+  border: 1px solid var(--color-border);
+}
+
+.markdown pre code {
+  @apply p-0;
+  background-color: transparent;
+}
+
+.markdown a {
+  @apply font-medium;
+  color: var(--color-primary);
+  text-decoration: underline;
+  text-decoration-color: var(--color-primary);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+  transition: all 200ms ease;
+}
+
+.markdown a:hover {
+  color: var(--color-primary-light);
+  text-shadow: 0 0 8px rgba(0, 255, 0, 0.5);
+}
+
+.markdown img {
+  @apply rounded-lg my-8 mx-auto;
+  max-width: 100%;
+  height: auto;
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-md);
+}
+
+.markdown hr {
+  @apply my-12;
+  border: none;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    var(--color-primary) 50%,
+    transparent 100%
+  );
+}
+
+.markdown table {
+  @apply w-full my-8;
+  border-collapse: collapse;
+}
+
+.markdown th,
+.markdown td {
+  @apply px-4 py-3 text-left;
+  border: 1px solid var(--color-border);
+}
+
+.markdown th {
+  @apply font-semibold;
+  background-color: rgba(0, 255, 0, 0.1);
+  color: var(--color-primary);
+}
+
+.markdown tr:hover {
+  background-color: rgba(0, 255, 0, 0.05);
 }

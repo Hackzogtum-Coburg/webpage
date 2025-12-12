@@ -3,9 +3,9 @@ import Link from 'next/link'
 
 export default function Info() {
     return (
-      <div>
+      <div className="content-box">
             <h3>Über uns</h3>     
-            <div className="entry-content">
+            <div>
                 <p>Du hast sicher einige Fragen an uns.</p> <br />
 
                 <p><b>Was ist das Hackzogtum?</b><br />

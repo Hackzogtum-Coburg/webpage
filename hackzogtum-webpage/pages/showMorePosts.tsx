@@ -16,7 +16,7 @@ export default function Index({ allPosts }: PostsProps) {
         <Container>
           <Intro />
           
-          {allPosts.length > 0 && <MoreStories allPosts={allPosts} />}
+          {allPosts.length > 0 && <MoreStories allPosts={allPosts} showFirstRowLarge={false} />}
         </Container>
       </Layout>
     </>
