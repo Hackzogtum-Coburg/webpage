@@ -32,7 +32,7 @@ export default function Intro() {
       endDate: string;
   }
 
-  function getFirstFutureReoccurance(vevent: any) : ResultDate{
+  function getFirstFutureReoccurance(vevent: any) : ResultDate | null{
     let startDates = new ICAL.RecurExpansion({
       component: vevent,
       dtstart: vevent.getFirstPropertyValue('dtstart')
@@ -45,10 +45,19 @@ export default function Intro() {
     });
     let nextEndDate = endDates.next();
 
+    // Check if we have valid dates
+    if (!nextStartDate || !nextEndDate) {
+      return null;
+    }
 
-    while(Date.parse(nextEndDate.toString()) < Date.now()){
+    while(nextEndDate && Date.parse(nextEndDate.toString()) < Date.now()){
       nextStartDate = startDates.next()
       nextEndDate = endDates.next()
+      
+      // If we run out of recurrences, return null
+      if (!nextStartDate || !nextEndDate) {
+        return null;
+      }
     }
     return {
       summary: vevent.getFirstPropertyValue('summary'),
@@ -85,17 +94,19 @@ export default function Intro() {
             endDate: e.getFirstPropertyValue('dtend').toString()
           };
         })
-        .filter((e: ResultDate) => {
-          return Date.parse(e.endDate) > Date.now()
+        .filter((e: ResultDate | null) => {
+          return e !== null && Date.parse(e.endDate) > Date.now()
         })
         .sort((a : ResultDate,b : ResultDate) => {
           return Date.parse(a.startDate) - Date.parse(b.startDate)
         })[0]
 
-      setNextEvent({
-        summary: nextEvent.summary,
-        startDate: new Date(Date.parse(nextEvent.startDate.toString())).toLocaleString("de-DE")
-      });
+      if (nextEvent) {
+        setNextEvent({
+          summary: nextEvent.summary,
+          startDate: new Date(Date.parse(nextEvent.startDate.toString())).toLocaleString("de-DE")
+        });
+      }
     })
     .catch(err => { setNextEvent(null); console.error('Failed to load calendar:', err)});
   }, []);
