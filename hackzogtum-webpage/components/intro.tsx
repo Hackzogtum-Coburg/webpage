@@ -94,14 +94,14 @@ export default function Intro() {
             endDate: e.getFirstPropertyValue('dtend').toString()
           };
         })
-        .filter((e: ResultDate | null) => {
+        .filter((e: ResultDate | null): e is ResultDate => {
           return e !== null && Date.parse(e.endDate) > Date.now()
         })
         .sort((a : ResultDate,b : ResultDate) => {
           return Date.parse(a.startDate) - Date.parse(b.startDate)
         })[0]
 
-      if (nextEvent) {
+      if (nextEvent && nextEvent.summary && nextEvent.startDate) {
         setNextEvent({
           summary: nextEvent.summary,
           startDate: new Date(Date.parse(nextEvent.startDate.toString())).toLocaleString("de-DE")
