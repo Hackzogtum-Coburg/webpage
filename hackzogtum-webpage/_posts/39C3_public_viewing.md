@@ -15,8 +15,8 @@ Wir werden jeden Tag ab 11:00 Uhr offen haben und solange bleiben, wie uns Vortr
 
 Wir kümmern uns um ein Abendessen nach Anmeldung, um dem Pizzaklischee zu entkommen:
 
-Tag1: Gulasch, mit Tier. Tierfrei schaffen wir auch, Veggies bestellen bitte konkreten Ersatz oder bringen ihn mit
-Tag2: Linseneintopf, das bekommen wir vegan hin
-Tag3: Chili sin Carne, auch das schaffen wir vegan
+Tag1: [Gulasch](https://www.der-postillon.com/2019/04/fakten-gulasch.html), mit Tier (Kuh). Tierfrei schaffen wir auch, Veggies bestellen bitte konkreten Ersatz oder bringen ihn mit
+Tag2: Linseneintopf nach Art meiner Mama, das bekommen wir vegan hin
+Tag3: Chili sin Carne nach Art von Maggi oder Knorr, auch das schaffen wir vegan
 
 In diesem Sinne wünschen wir eine frohe Congresszeit!
