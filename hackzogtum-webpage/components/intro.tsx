@@ -190,7 +190,7 @@ export default function Intro() {
               )}
 
               <a href="https://cumulus.hackzogtum-coburg.de/apps/calendar/p/YdJDi9ik8jRABobq" 
-                 className="calendar-link">
+                 className="calendar-link" target="_blank" rel="noopener noreferrer">
                 → Eventkalender
               </a>
             </div>
