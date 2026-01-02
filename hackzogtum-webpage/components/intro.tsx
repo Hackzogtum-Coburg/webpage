@@ -21,26 +21,30 @@ export default function Intro() {
     next_open: ""
   };
 
-  const MOCK_EVENT = [{
+  const MOCK_EVENT : ResultDate[] = [{
     summary: "Test Hackathon",
     startDate: "15.12.2025, 19:00:00",
+    endDate: "15.12.2025, 20:00:00",
     link: "https://hackzogtum-coburg.de"
   },
   {
     summary: "Test HackathonHackathon",
-    startDate: "15.12.2025, 19:00:00"
+    startDate: "15.12.2025, 19:00:00",
+    endDate: "15.12.2025, 20:00:00",
+    link: "https://hackzogtum-coburg.de"
   },
   {
     summary: "Test Hackathon",
-    startDate: "15.12.2025, 19:00:00"
-  }
-  ];
+    startDate: "15.12.2025, 19:00:00",
+    endDate: "15.12.2025, 20:00:00",
+    link: "https://hackzogtum-coburg.de"
+  }];
 
   interface ResultDate  {
       summary: string;
       startDate: string;
       endDate: string;
-      link: string;
+      link: string | null;
   }
 
   function getFirstFutureReoccurance(vevent: any) : ResultDate | null{
@@ -81,12 +85,12 @@ export default function Intro() {
   function getLink(vevent: any) : string | null {
     return vevent.getFirstPropertyValue('description')
       ?.split(/\r?\n/)
-      .find(l => l.startsWith("http"))
+      .find((l: string) => l.startsWith("http"))
       ?.trim()
   }
     
 
-  const [nextEvents, setNextEvents] = useState<[{summary: string, startDate: string}]| null>(null);
+  const [nextEvents, setNextEvents] = useState<ResultDate[]|null>(null);
   useEffect(() => {
     if (DEBUG_MODE) {
       console.log('🔧 DEBUG MODE: Using mock event data');
@@ -117,12 +121,8 @@ export default function Intro() {
           .filter((e: ResultDate | null): e is ResultDate => {
             return e !== null && Date.parse(e.endDate) > Date.now()
           })
-          
           .sort((a : ResultDate,b : ResultDate) => {
             return Date.parse(a.startDate) - Date.parse(b.startDate)
-          })
-          .filter((e: ResultDate) => {
-            return e && e.summary && e.startDate
           })
           .slice(0,3)
           .map((e: ResultDate) => {
@@ -130,7 +130,8 @@ export default function Intro() {
             return {
               summary: e.summary,
               link: e.link,
-              startDate: new Date(Date.parse(e.startDate.toString())).toLocaleString("de-DE")
+              startDate: new Date(Date.parse(e.startDate.toString())).toLocaleString("de-DE"),
+              endDate: new Date(Date.parse(e.endDate.toString())).toLocaleString("de-DE")
             };
           })
         );
