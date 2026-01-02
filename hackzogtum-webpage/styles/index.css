@@ -315,8 +315,7 @@
   /* Navigation */
   .header-nav {
     @apply flex flex-row lg:flex-col gap-4 lg:gap-3;
-    align-items: center;
-    justify-content: center;
+    @apply items-center justify-center;
     padding: 1rem;
   }
 
@@ -328,37 +327,30 @@
 
   .nav-link {
     @apply relative px-4 py-2 rounded-lg;
-    color: var(--color-text-primary);
+
+    text-align:center;
+
+    color: var(--color-primary);
+    border-color: var(--color-primary);
     text-decoration: none;
     font-weight: 500;
-    border: 1px solid transparent;
+    border: 1px solid;
     transition: all var(--transition-normal) ease;
     white-space: nowrap;
   }
 
-  .nav-link::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    border-radius: 8px;
-    border: 1px solid var(--color-primary);
-    opacity: 0;
-    transition: opacity var(--transition-normal) ease;
-  }
-
   .nav-link:hover {
-    color: var(--color-primary);
-    border-color: var(--color-primary);
-    background-color: rgba(0, 255, 0, 0.05);
-  }
-
-  .nav-link:hover::before {
-    opacity: 1;
+    background-color: rgba(0, 255, 0, 0.07);
   }
 
   @media (max-width: 1023px) {
     .header-nav {
       @apply flex-row justify-center;
+    }
+  }
+  @media (min-width: 1024px) {
+    .nav-link{
+      @apply w-full;
     }
   }
 
