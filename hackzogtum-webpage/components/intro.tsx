@@ -233,7 +233,7 @@ export default function Intro() {
                     {
                       nextEvents.map((e : ResultDate) => {
                           return (
-                            <tr>
+                            <tr key={e.startDate}>
 
                               <td className="event-title">
                               {
