@@ -16,20 +16,31 @@ export default function Intro() {
     open: true,
     api: "0.13",
     sensors: {
-      "in space": ["Alice", "Bob", "Charlie"]
+      "in space": ["Alice", "Bob", "Eve"]
     },
     next_open: ""
   };
 
-  const MOCK_EVENT = {
+  const MOCK_EVENT = [{
+    summary: "Test Hackathon",
+    startDate: "15.12.2025, 19:00:00",
+    link: "https://hackzogtum-coburg.de"
+  },
+  {
+    summary: "Test HackathonHackathon",
+    startDate: "15.12.2025, 19:00:00"
+  },
+  {
     summary: "Test Hackathon",
     startDate: "15.12.2025, 19:00:00"
-  };
+  }
+  ];
 
   interface ResultDate  {
       summary: string;
       startDate: string;
       endDate: string;
+      link: string;
   }
 
   function getFirstFutureReoccurance(vevent: any) : ResultDate | null{
@@ -61,54 +72,70 @@ export default function Intro() {
     }
     return {
       summary: vevent.getFirstPropertyValue('summary'),
+      link: getLink(vevent),
       startDate: nextStartDate.toString(),
       endDate: nextEndDate.toString() 
     };
   }
 
+  function getLink(vevent: any) : string | null {
+    return vevent.getFirstPropertyValue('description')
+      ?.split(/\r?\n/)
+      .find(l => l.startsWith("http"))
+      ?.trim()
+  }
+    
 
-  const [nextEvent, setNextEvent] = useState<{summary: string, startDate: string}| null>(null);
+  const [nextEvents, setNextEvents] = useState<[{summary: string, startDate: string}]| null>(null);
   useEffect(() => {
     if (DEBUG_MODE) {
       console.log('🔧 DEBUG MODE: Using mock event data');
-      setNextEvent(MOCK_EVENT);
+      setNextEvents(MOCK_EVENT);
       return;
     }
 
     fetch('https://cumulus.hackzogtum-coburg.de/remote.php/dav/public-calendars/YdJDi9ik8jRABobq/?export')
-    .then(response => response.text())
-    .then(icsData => {
-      // Use ical.js or a parser to read .ics
-      const jcalData = ICAL.parse(icsData);
-      const comp = new ICAL.Component(jcalData);
-      const events = comp.getAllSubcomponents("vevent");
+      .then(response => response.text())
+      .then(icsData => {
+        // Use ical.js or a parser to read .ics
+        const jcalData = ICAL.parse(icsData);
+        const comp = new ICAL.Component(jcalData);
+        const events = comp.getAllSubcomponents("vevent");
 
-      var nextEvent = events
-        .map((e : any)=> {
-          if(e.getFirstProperty('rrule')){
-            return getFirstFutureReoccurance(e)
-          }
-          return {
-            summary: e.getFirstPropertyValue('summary'),
-            startDate: e.getFirstPropertyValue('dtstart').toString(),
-            endDate: e.getFirstPropertyValue('dtend').toString()
-          };
-        })
-        .filter((e: ResultDate | null): e is ResultDate => {
-          return e !== null && Date.parse(e.endDate) > Date.now()
-        })
-        .sort((a : ResultDate,b : ResultDate) => {
-          return Date.parse(a.startDate) - Date.parse(b.startDate)
-        })[0]
-
-      if (nextEvent && nextEvent.summary && nextEvent.startDate) {
-        setNextEvent({
-          summary: nextEvent.summary,
-          startDate: new Date(Date.parse(nextEvent.startDate.toString())).toLocaleString("de-DE")
-        });
-      }
-    })
-    .catch(err => { setNextEvent(null); console.error('Failed to load calendar:', err)});
+        setNextEvents(
+          events.map((e : any)=> {
+            if(e.getFirstProperty('rrule')){
+              return getFirstFutureReoccurance(e)
+            }
+            return {
+              summary: e.getFirstPropertyValue('summary'),
+              link: getLink(e),
+              startDate: e.getFirstPropertyValue('dtstart').toString(),
+              endDate: e.getFirstPropertyValue('dtend').toString()
+            };
+          })
+          .filter((e: ResultDate | null): e is ResultDate => {
+            return e !== null && Date.parse(e.endDate) > Date.now()
+          })
+          
+          .sort((a : ResultDate,b : ResultDate) => {
+            return Date.parse(a.startDate) - Date.parse(b.startDate)
+          })
+          .filter((e: ResultDate) => {
+            return e && e.summary && e.startDate
+          })
+          .slice(0,3)
+          .map((e: ResultDate) => {
+            console.log(e);
+            return {
+              summary: e.summary,
+              link: e.link,
+              startDate: new Date(Date.parse(e.startDate.toString())).toLocaleString("de-DE")
+            };
+          })
+        );
+      })
+      .catch(err => { setNextEvents(null); console.error('Failed to load calendar:', err)});
   }, []);
 
   const [data, setData] = useState<{
@@ -132,7 +159,6 @@ export default function Intro() {
         console.error('Fehler bei der API-Anfrage:', error);
       });
   }, []);
-
 
   return (
     <section className="header-section">
@@ -170,7 +196,7 @@ export default function Intro() {
                   <FontAwesomeIcon icon={faPhone} className="status-icon" />
                   <span>Call our canphone: </span>
                   <a href="tel:+49221596192432" className="phone-link">
-                    +49221596192432
+                    +49 221 596 192 432
                   </a>
                 </div>
               )}
@@ -191,19 +217,43 @@ export default function Intro() {
               )}
 
               {/* Next Event */}
-              {nextEvent && (
-                <div className="status-item">
-                  <FontAwesomeIcon icon={faCalendar} className="status-icon" />
-                  <span>Nächstes Event: </span>
-                  <span className="event-title">{nextEvent.summary}</span>
-                  <span className="event-date"> am {nextEvent.startDate} Uhr</span>
-                </div>
-              )}
-
-              <a href="https://cumulus.hackzogtum-coburg.de/apps/calendar/p/YdJDi9ik8jRABobq" 
+              { nextEvents && (
+                <>
+                  <div className="status-item">
+                    <FontAwesomeIcon icon={faCalendar} className="status-icon" />
+                    <div>
+<a href="https://cumulus.hackzogtum-coburg.de/apps/calendar/p/YdJDi9ik8jRABobq" 
                  className="calendar-link" target="_blank" rel="noopener noreferrer">
-                → Eventkalender
+                Eventkalender:
               </a>
+
+                    </div>
+                  </div>
+                  <table >
+                    {
+                      nextEvents.map((e : ResultDate) => {
+                          return (
+                            <tr>
+
+                              <td className="event-title">
+                              {
+                                e.link ? (
+                                  <a href={e.link}>{e.summary}</a> 
+                                ) : (
+                                  e.summary
+                                )
+                              }
+                              </td>
+                              <td className="event-date">{e.startDate} Uhr</td>
+                            </tr>
+                          )
+                        }
+                      )
+                    }
+                  </table>
+                </>
+                )
+              }
             </div>
           </div>
         )}
