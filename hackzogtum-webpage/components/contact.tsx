@@ -8,25 +8,26 @@ export default function Contact() {
             <div>
                 <p>Wir freuen uns sehr über Dein Interesse! Bei <Link href="/info">Fragen</Link> sind wir auf folgende Arten zu erreichen:<br />
                 <br />
-                <strong>1. Folge uns auf Mastodon:</strong><br />
+<strong>1. Komm vorbei!</strong><br />
+                Unsere Räume in der Heiligkreuzstraße 3 in Coburg stehen jedem Interessierten offen.<br />
+                {/* Ob der Space gerade offen hat siehst du <a title="Open/Closed" href="https://hackzogtum-coburg.de/?page_id=869">hier</a>.<br /> */}
+                Unser regelmäßiger Mitgliedertreff findet jeden Dienstag ab 20Uhr statt.<br />
+                BringYourOwnDevice! Die Erfahrung lehrt: Bring am besten einen Laptop mit. Diesen Tip unterstützen die meisten, die das erste Mal da waren.</p>
+
+                <strong>2. Folge uns auf Mastodon:</strong><br />
                 Für allgemeine Informationen zum Verein kannst du uns gerne auf <a href="https://chaos.social/@Hackzogtum">Mastodon</a> folgen.<br />
                 <br />
-                <strong>2. Trage dich in unsere <a title="Mailingliste" href="https://lists.electrologic.org/postorius/lists/talk.chaostreff-coburg.de/">Mailingliste</a> ein.</strong><br />
+                <strong>3. Trage dich in unsere <a title="Mailingliste" href="https://lists.electrologic.org/postorius/lists/talk.chaostreff-coburg.de/">Mailingliste</a> ein.</strong><br />
                 Hier erfährst Du stets die neuesten News zum Verein und Diskussionen unserer Mitglieder.<br />
                 <br />
                 {/* Zum Beispiel via <a title="#hackzogtumCoburg auf freenode.net" href="https://hackzogtum-coburg.de/?page_id=36">Webclient</a>.<br /> 
                 <br />
                 <strong>5. Triff uns im <a href="https://mumble.com">mumble</a> </strong> unter <a href="mumble://mumble.hackzogtum-coburg.de">mumble.hackzogtum-coburg.de</a><br />
                 <br />*/}
-                <strong>3. Stelle spezifischere Fragen per e-Mail:</strong><br />
+                <strong>4. Stelle spezifischere Fragen per e-Mail:</strong><br />
                 Schreib an <a href="mailto:info@hackzogtum-coburg.de">info@hackzogtum-coburg.de</a><br />
                 <br />
-                <strong>4. Komm vorbei!</strong><br />
-                Unsere Räume in der Heiligkreuzstraße 3 in Coburg stehen jedem Interessierten offen.<br />
-                {/* Ob der Space gerade offen hat siehst du <a title="Open/Closed" href="https://hackzogtum-coburg.de/?page_id=869">hier</a>.<br /> */}
-                Unser regelmäßiger Mitgliedertreff findet jeden Dienstag ab 20Uhr statt.<br />
-                BringYourOwnDevice! Die Erfahrung lehrt: Bring am besten einen Laptop mit. Diesen Tip unterstützen die meisten, die das erste Mal da waren.</p>
-            </div>
+                            </div>
       </div>
     )
   }
