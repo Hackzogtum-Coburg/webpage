@@ -47,7 +47,7 @@ export default function Intro() {
       link: string | null;
   }
 
-  function getFirstFutureReoccurance(vevent: any) : ResultDate | null{
+  function getFirstFutureReoccurances(vevent: any) : ResultDate | null{
     let startDates = new ICAL.RecurExpansion({
       component: vevent,
       dtstart: vevent.getFirstPropertyValue('dtstart')
@@ -65,6 +65,7 @@ export default function Intro() {
       return null;
     }
 
+    //go up until we are in the future
     while(nextEndDate && Date.parse(nextEndDate.toString()) < Date.now()){
       nextStartDate = startDates.next()
       nextEndDate = endDates.next()
@@ -74,12 +75,27 @@ export default function Intro() {
         return null;
       }
     }
-    return {
-      summary: vevent.getFirstPropertyValue('summary'),
-      link: getLink(vevent),
-      startDate: nextStartDate.toString(),
-      endDate: nextEndDate.toString() 
-    };
+
+    //create at least 3 results to be flatmapped in the caller
+    let results = [];
+
+    for(var i=0; i<3; i++) {
+      results.push({
+        summary: vevent.getFirstPropertyValue('summary'),
+        link: getLink(vevent),
+        startDate: nextStartDate.toString(),
+        endDate: nextEndDate.toString() 
+      });
+      
+      nextStartDate = startDates.next()
+      nextEndDate = endDates.next()
+
+      if (!nextStartDate || !nextEndDate) {
+        break;
+      }
+    }
+
+    return results;
   }
 
   function getLink(vevent: any) : string | null {
@@ -107,16 +123,16 @@ export default function Intro() {
         const events = comp.getAllSubcomponents("vevent");
 
         setNextEvents(
-          events.map((e : any)=> {
+          events.flatMap((e : any)=> {
             if(e.getFirstProperty('rrule')){
-              return getFirstFutureReoccurance(e)
+              return getFirstFutureReoccurances(e)
             }
-            return {
+            return [{
               summary: e.getFirstPropertyValue('summary'),
               link: getLink(e),
               startDate: e.getFirstPropertyValue('dtstart').toString(),
               endDate: e.getFirstPropertyValue('dtend').toString()
-            };
+            }];
           })
           .filter((e: ResultDate | null): e is ResultDate => {
             return e !== null && Date.parse(e.endDate) > Date.now()
@@ -231,6 +247,7 @@ export default function Intro() {
                     </div>
                   </div>
                   <table >
+                  <tbody>
                     {
                       nextEvents.map((e : ResultDate) => {
                           return (
@@ -251,6 +268,7 @@ export default function Intro() {
                         }
                       )
                     }
+                  </tbody>
                   </table>
                 </>
                 )
