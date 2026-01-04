@@ -47,7 +47,7 @@ export default function Intro() {
       link: string | null;
   }
 
-  function getFirstFutureReoccurances(vevent: any) : ResultDate | null{
+  function getFirstFutureReoccurances(vevent: any) : ResultDate[] | null{
     let startDates = new ICAL.RecurExpansion({
       component: vevent,
       dtstart: vevent.getFirstPropertyValue('dtstart')
