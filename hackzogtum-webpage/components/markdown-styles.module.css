@@ -23,8 +23,6 @@
 .markdown h2 {
   @apply text-3xl md:text-4xl font-bold mt-12 mb-4 leading-snug;
   color: var(--color-primary-light);
-  border-bottom: 2px solid var(--color-border);
-  padding-bottom: 0.5rem;
 }
 
 .markdown h3 {
@@ -86,10 +84,7 @@
 .markdown a {
   @apply font-medium;
   color: var(--color-primary);
-  text-decoration: underline;
-  text-decoration-color: var(--color-primary);
-  text-decoration-thickness: 2px;
-  text-underline-offset: 3px;
+  text-decoration: none;
   transition: all 200ms ease;
 }
 
