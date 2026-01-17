@@ -431,6 +431,10 @@
     transform: translateY(-2px);
   }
 
+  .postPreviewContainer:hover h3 a {
+    color: var(--color-primary) !important;
+  }
+
   /* Hidden Link Utility */
   .hiddenLink {
     @apply hidden;

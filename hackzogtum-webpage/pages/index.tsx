@@ -26,4 +26,4 @@ export default function Index({ allPosts }: PostsProps) {
   )
 }
 
-export const getStaticProps = getAllPostsProps(0, 20);
+export const getStaticProps = getAllPostsProps(0, 19);
