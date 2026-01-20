@@ -291,6 +291,9 @@ export default function Intro() {
           <Link href="/info" className="nav-link" title="Info">
             Wer sind wir
           </Link>
+          <Link href="/projekte" className="nav-link" title="Projekte">
+            Projekte
+          </Link>
           <Link href="/kontakt" className="nav-link" title="Kontakt">
             Kontakt
           </Link>
