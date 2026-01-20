@@ -121,6 +121,14 @@ export default function Intro() {
         const jcalData = ICAL.parse(icsData);
         const comp = new ICAL.Component(jcalData);
         const events = comp.getAllSubcomponents("vevent");
+        const dateOptions: Intl.DateTimeFormatOptions = {
+          day: '2-digit',
+          month: '2-digit',
+          year: 'numeric',
+          hour: '2-digit',
+          minute: '2-digit',
+          hour12: false
+        };
 
         setNextEvents(
           events.flatMap((e : any)=> {
@@ -146,8 +154,8 @@ export default function Intro() {
             return {
               summary: e.summary,
               link: e.link,
-              startDate: new Date(Date.parse(e.startDate.toString())).toLocaleString("de-DE"),
-              endDate: new Date(Date.parse(e.endDate.toString())).toLocaleString("de-DE")
+              startDate: new Date(Date.parse(e.startDate.toString())).toLocaleString("de-DE", dateOptions),
+              endDate: new Date(Date.parse(e.endDate.toString())).toLocaleString("de-DE", dateOptions)
             };
           })
         );
